@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" content="text/html">
+    <!--<link rel="stylesheet" href="nav_panel.css" type="text/css">-->
+    <title>News</title>
+</head>
+<body>
+    <!--<div th:insert="~{nav_panel :: navigation_panel}"></div>-->
+    <header class="menu">
+        <nav>
+            <ul>
+                <li><a href="#">My page</a></li>
+                <li><a href="/news">News</a></li>
+                <li><a href="/news/create_news">Create news</a></li>
+                <li><a href="#">Messages</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Date of Created</th>
+                <th>Author</th>
+            </tr>
+            <tr th:each="news : ${allNews}">
+                <td th:text="${news.title}"></td>
+                <td th:text="${news.description}"></td>
+                <td th:text="${#dates.format(news.dateOfCreation, 'yyyy-MM-dd')}"></td>
+                <td><a href="#" th:text="${news.author}"></a></td>
+            </tr>
+        </table>
+    </main>
+    <footer></footer>
+</body>
+</html>

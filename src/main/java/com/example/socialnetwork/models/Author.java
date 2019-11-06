@@ -31,5 +31,5 @@ public class Author extends IdIdentity{
     private Boolean online;
 
     @OneToMany(mappedBy = "author", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<New> news;
+    private List<News> news;
 }

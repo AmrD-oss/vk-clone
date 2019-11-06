@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="nav_panel.css" type="text/css">
-    <title>User-Page</title>
+    <title>Title</title>
 </head>
 <body>
-    <div class="menu">
+    <div th:fragment="navigation_panel">
         <nav>
             <ul>
                 <li><a href="#">My page</a></li>
                 <li><a href="#">News</a></li>
-                <li><a href="create_news.html">Create news</a></li>
+                <li><a href="/news/create_news">Create news</a></li>
                 <li><a href="#">Messages</a></li>
             </ul>
         </nav>
     </div>
-    <footer></footer>
 </body>
 </html>
