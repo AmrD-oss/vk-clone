@@ -26,7 +26,6 @@ public class NewsController {
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    @ResponseStatus(HttpStatus.OK)
     public String showNewsWall(Model model){
         log.info("showNewsWall method called");
         model.addAttribute("allNews", newsService.getAllNews());
@@ -35,26 +34,25 @@ public class NewsController {
     }
 
     @RequestMapping(value = "/{title}/{author}", method = RequestMethod.GET)
-    @ResponseStatus(HttpStatus.OK)
     public News showNews(@PathVariable String title, @PathVariable String author) {
         log.info("showNews method called");
         return newsService.getByTitleAndAuthorName(title, author);
     }
 
-    @RequestMapping(value = "/create_news", method = RequestMethod.GET)
-    public String createNews(Model model) {
+    @RequestMapping(value = "/create_news_form", method = RequestMethod.GET)
+    public String createNewsForm(Model model) {
         log.info("createNews method called");
         model.addAttribute("news", new News());
 
-        return "create_news";
+        return "create_news_form";
     }
 
-    @RequestMapping(value = "/create_news/submit", method = RequestMethod.POST)
-    public String submitNews(@ModelAttribute @Valid News news, BindingResult result) {
+    @RequestMapping(value = "/create_news_form/submit", method = RequestMethod.POST)
+    public String submitNews(@ModelAttribute News news, BindingResult result) {
         log.info("submitNews method called");
 
         if(result.hasErrors()){
-            return "create_news";
+            return "create_news_form";
         }
 
         newsService.saveNews(news);

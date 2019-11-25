@@ -1,0 +1,15 @@
+button {
+    margin-top: 20px;
+}
+
+#create_news_form {
+    width: 300px;
+    background-color: #DEF1E5;
+    border-radius: 20px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+#create_news_form div {
+    margin-top: 20px;
+}

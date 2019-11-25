@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/nav_panel.css">
+    <title></title>
+</head>
+<body>
+    <nav th:fragment="navigation_panel" class="header_block">
+        <ul>
+            <li><a href="#">My page</a></li>
+            <li><a href="/news">News</a></li>
+            <li><a href="/news/create_news_form">Create news</a></li>
+            <li><a href="#">Messages</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

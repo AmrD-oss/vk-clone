@@ -1,0 +1,12 @@
+com\example\socialnetwork\controllers\NewsController.class
+com\example\socialnetwork\repositories\ChatRepo.class
+com\example\socialnetwork\ServletInitializer.class
+com\example\socialnetwork\models\Chat.class
+com\example\socialnetwork\repositories\NewsRepo.class
+com\example\socialnetwork\service\NewsService.class
+com\example\socialnetwork\controllers\UserPageController.class
+com\example\socialnetwork\SocialNetworkApplication.class
+com\example\socialnetwork\models\Author.class
+com\example\socialnetwork\repositories\UsersRepo.class
+com\example\socialnetwork\models\IdIdentity.class
+com\example\socialnetwork\models\News.class

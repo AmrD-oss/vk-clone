@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/create_news_form.css" th:href="@{/static/css/create_news_form.css}">
+    <link rel="stylesheet" type="text/css" href="/static/css/nav_panel.css" th:href="@{/static/css/nav_panel.css}">
+    <title>Title</title>
+</head>
+<body>
+    <header>
+        <div th:insert="~{nav_panel :: navigation_panel}"></div>
+    </header>
+    <div id="create_news_form">
+        <form method="post" id="news_form" action="#" th:action="@{/news/create_news_form/submit}" th:object="${news}">
+            <div>
+                <label for="title">Заголовок</label>
+                <input type="text" id="title" th:field="*{title}" placeholder="Заголовок новости" name="title">
+            </div>
+            <div>
+                <label for="description">Описание</label>
+                <textarea cols="30" rows="6" form="news_form" id="description" th:field="*{description}" placeholder="Содержание..." name="description"></textarea>
+            </div>
+            <div>
+                <label for="date">Date of creation</label>
+                <input type="date" id="date" th:field="*{dateOfCreation}" th:value="${#dates.format(news.dateOfCreation)}" placeholder="Дата создания" name="date_of_creation">
+            </div>
+            <button type="submit" value="Submit">Создать</button>
+        </form>
+    </div>
+</body>
+</html>
