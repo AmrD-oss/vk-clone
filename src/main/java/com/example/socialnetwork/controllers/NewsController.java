@@ -10,8 +10,6 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
-
 
 @Slf4j
 @Controller
@@ -29,7 +27,7 @@ public class NewsController {
     public String showNewsWall(Model model){
         log.info("showNewsWall method called");
         model.addAttribute("allNews", newsService.getAllNews());
-
+        
         return "news";
     }
 

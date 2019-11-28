@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Tahoma", sans-serif;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.avatar {
+    width: 230px;
+    height: 280px;
+    border: 1px darkgrey;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-color: snow;
+    position: relative;
+    left: 330px;
+    margin-top: 25px;
+}
+
+.avatar .image {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    position: absolute;
+    top: 2px;
+    border-radius: 20px;
+}
+
+.avatar .download-photo {
+    color: #2a5885;
+    position: relative;
+    text-align: center;
+    top: 180px;
+    left: 45px;
+}
+
+.avatar .edit {
+    width: 145px;
+    height: 30px;
+    background-color: #e5ebf1;
+    position: absolute;
+    top: 235px;
+    left: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.avatar .edit:hover {
+    background-color: #dfe6ed;
+}
+
+.avatar .edit p {
+    padding: 7px;
+}
+
+.avatar .edit p a {
+    color: #55677d;
+}
+
+.avatar .settings {
+    width: 45px;
+    height: 30px;
+    background-color: #e5ebf1;
+    border-radius: 5px;
+    position: absolute;
+    left: 170px;
+    top: 235px;
+}
+
+.avatar .settings:hover {
+    background-color: #dfe6ed;
+}
+
+.avatar .settings a img {
+    width: 15px;
+    height: 15px;
+    padding: 7px;
+    margin-left: 8px;
+    margin-top: 2px;
+}
+
+.info_block {
+    width: 500px;
+    height: 250px;
+    position: relative;
+    bottom: 305px;
+    left: 580px;
+    margin-top: 25px;
+    background-color: snow;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+.info_block .username {
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    margin: 20px 0 0 20px;
+}
+
+.info_block .username h3 {
+    font-weight: lighter;
+}
+
+.info_block .online_status {
+
+}
+
+.info_block .status {
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.info_block .status p {
+    color: darkgrey;
+}
+

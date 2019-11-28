@@ -2,17 +2,27 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/static/css/nav_panel.css">
+    <link rel="stylesheet" type="text/css" href="#" th:href="@{/static/css/header.css}">
+    <link rel="stylesheet" type="text/css" href="#" th:href="@{/static/css/nav_panel.css}">
     <title></title>
 </head>
 <body>
     <nav th:fragment="navigation_panel" class="header_block">
-        <ul>
-            <li><a href="#">My page</a></li>
-            <li><a href="/news">News</a></li>
-            <li><a href="/news/create_news_form">Create news</a></li>
-            <li><a href="#">Messages</a></li>
-        </ul>
+        <div><a href="/news"><img src="/images/vk-logo.png" id="logo" alt="Логотип"></a></div>
+        <div class="login"><a href="#">Войти</a></div>
+        <div class="nav_panel">
+            <ul>
+                <li><img src="/images/home.png" alt="Моя страница"><a href="/myPage">Моя страница</a></li>
+                <li><img src="/images/news.png" alt="Новости"><a href="/news">Новости</a></li>
+                <li><img src="/images/messages.png" alt="Сообщения"><a href="#">Сообщения</a></li>
+                <li><img src="/images/friends.png" alt="Друзья"><a href="#">Друзья</a></li>
+                <li><img src="/images/groups.png" alt="Группы"><a href="#">Сообщества</a></li>
+                <li><img src="/images/photos.png" alt="Фотографии"><a href="#">Фотографии</a></li>
+                <li><img src="/images/music.png" alt="Музыка"><a href="#">Музыка</a></li>
+                <li><img src="/images/photos.png" alt="Фотографии"><a href="#">Видео</a></li>
+                <li><a href="/news/create_news_form">Create news</a></li>
+            </ul>
+        </div>
     </nav>
 </body>
 </html>

@@ -25,7 +25,7 @@ public class Author extends IdIdentity{
     private String surname;
 
     @Column
-    private Date dataOfBirth;
+    private Date dateOfBirth;
 
     @Column(nullable = false)
     private Boolean online;

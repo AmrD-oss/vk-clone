@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8" content="text/html">
     <title>News</title>
+    <link rel="stylesheet" type="text/css" href="#" th:href="@{/static/css/header.css}">
     <link rel="stylesheet" type="text/css" href="#" th:href="@{/static/css/nav_panel.css}">
-    <link rel="stylesheet" href="/static/css/news_wall.css" th:href="@{/static/css/news_wall.css}">
+    <link rel="stylesheet" type="text/css" href="#" th:href="@{/static/css/news_wall.css}">
 </head>
 <body>
     <header>
         <div th:insert="~{nav_panel :: navigation_panel}"></div>
     </header>
     <main>
-        <section>
-            <table id="news_wall">
-                <tr class="tt">
+        <section id="news_wall">
+            <table>
+                <tr>
                     <th>Title</th>
                     <th>Description</th>
                     <th>Date of Created</th>

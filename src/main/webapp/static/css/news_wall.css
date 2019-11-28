@@ -1,7 +1,10 @@
 table {
-    border-spacing: 15px;
+    border-spacing: 10px;
 }
 
-.tt {
+#news_wall {
+    position: absolute;
+    left: 450px;
+    margin-top: 20px;
     text-align: left;
 }
