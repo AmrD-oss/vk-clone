@@ -9,6 +9,6 @@ import java.util.List;
 @Repository
 public interface NewsRepo extends JpaRepository<News, Long> {
     List<News> findAll();
-    News findByTitleAndAuthor_Name(String title, String authorName);
+//    News findByTitleAndAuthor_Name(String title, String authorName);
     void deleteById(Long id);
 }

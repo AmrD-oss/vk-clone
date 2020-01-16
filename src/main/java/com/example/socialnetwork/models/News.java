@@ -8,7 +8,8 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.util.Date;
+import javax.validation.constraints.Size;
+import java.time.LocalDateTime;
 
 @Data
 @Entity
@@ -20,25 +21,24 @@ import java.util.Date;
 public class News extends IdIdentity{
 
     @Column(nullable = false)
-    @NotNull(message = "Добавьте заголовок!")
+    @Size(min = 3, max = 100)
     private String title;
 
     @Column(nullable = false)
     @NotNull(message = "Добавьте текст!")
     private String description;
 
-    @Column(nullable = false)
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private Date dateOfCreation;
+    @Column
+    @DateTimeFormat(pattern = "HH:mm d MMM")
+    private LocalDateTime dateOfCreation = LocalDateTime.now();
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "author_id")
-    private Author author;
+    private User user;
 
-    public News(@NotNull(message = "Добавьте заголовок!") String title, @NotNull(message = "Добавьте текст!") String description, Author author) {
+    public News(String title, String description, User user) {
         this.title = title;
         this.description = description;
-        this.dateOfCreation = new Date();
-        this.author = author;
+        this.user = user;
     }
 }

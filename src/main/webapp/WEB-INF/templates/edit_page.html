@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="#" th:href="@{/static/css/header.css}">
+    <link rel="stylesheet" type="text/css" href="#" th:href="@{/static/css/nav_panel.css}">
+    <link rel="stylesheet" type="text/css" href="#" th:href="@{/static/css/edit_page.css}">
+</head>
+<body>
+<header>
+    <div th:insert="~{nav_panel :: navigation_panel}"></div>
+</header>
+<main>
+    <div class="edit_form">
+        <form method="post" id="edit_page_form" action="#" th:action="@{/edit_page/make_changes}" th:object="${user}">
+            <div><label for="name">Имя:<input type="text" id="name" th:field="*{name}"></label></div>
+            <div><label for="surname">Фамилия:<input type="text" id="surname" th:field="*{surname}"></label></div>
+            <div><label for="status">Статус:<input type="text" id="status" th:field="*{status}"></label></div>
+            <div><label for="birthday">День рождения:<input type="text" id="birthday" th:field="*{dateOfBirth}" th:value="${#dates.format(news.dateOfBirth)}"></label></div>
+            <div><label for="city">Город:<input type="text" id="city" th:field="*{city}"></label></div>
+            <div><button type="submit" value="Внести изменения"></button></div>
+        </form>
+    </div>
+</main>
+<footer></footer>
+</body>
+</html>

@@ -23,23 +23,23 @@ public class NewsService {
         return newsRepo.findAll();
     }
 
-    public News getByTitleAndAuthorName(String title, @Nullable String authorName) {
-        if (title == null) {
-            throw new NullPointerException("News title not found");
-        }
+//    public News getByTitleAndAuthorName(String title, @Nullable String authorName) {
+//        if (title == null) {
+//            throw new NullPointerException("News title not found");
+//        }
+//
+//        News news = null;
+//
+//        try {
+//            news = newsRepo.findByTitleAndAuthor_Name(title, authorName);
+//        } catch (NullPointerException e) {
+//            e.printStackTrace();
+//        }
+//
+//        return news;
+//    }
 
-        News news = null;
-
-        try {
-            news = newsRepo.findByTitleAndAuthor_Name(title, authorName);
-        } catch (NullPointerException e) {
-            e.printStackTrace();
-        }
-
-        return news;
-    }
-
-    public News saveNews(News news) {
+    public void saveNews(News news) {
         if (news == null) {
             throw new NullPointerException();
         }
@@ -47,9 +47,9 @@ public class NewsService {
         News newNews = new News();
 
         newNews.setTitle(news.getTitle());
-        newNews.setAuthor(news.getAuthor());
+//        newNews.setUser(news.getUser());
         newNews.setDescription(news.getDescription());
-        newNews.setDateOfCreation(news.getDateOfCreation());
+//        newNews.setDateOfCreation(news.getDateOfCreation());
 
         try {
             newsRepo.save(newNews);
@@ -57,7 +57,6 @@ public class NewsService {
             e.printStackTrace();
         }
 
-        return newNews;
     }
 
     public void deleteNews(Long id) {

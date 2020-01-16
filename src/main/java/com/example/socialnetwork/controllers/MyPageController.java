@@ -1,16 +1,28 @@
 package com.example.socialnetwork.controllers;
 
+import com.example.socialnetwork.service.FileService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.*;
+import java.util.UUID;
 
 
 @Slf4j
 @Controller
-@RequestMapping("/myPage")
+@RequestMapping("/my_page")
 public class MyPageController {
+
+    private FileService fileService;
+
+    @Autowired
+    public MyPageController(FileService fileService) {
+        this.fileService = fileService;
+    }
 
     @RequestMapping(method = RequestMethod.GET)
     public String showMyPage(Model model) {
@@ -19,8 +31,53 @@ public class MyPageController {
         return "my_page";
     }
 
-    @RequestMapping()
-    public String downloadAvatar() {
-        return null;
+    @RequestMapping(value = "/download_avatar_form", method = RequestMethod.GET)
+    public String downloadAvatarForm() {
+        return "download_avatar_form";
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "/download_avatar_form", method = RequestMethod.POST)
+    public String submitDownloadAvatarForm(@RequestParam("file") MultipartFile multipartFile, Model model) {
+//
+//        String fileName = multipartFile.getOriginalFilename();
+//        String toStringFile = multipartFile.toString();
+//        String rootPath = toStringFile.substring(0, toStringFile.lastIndexOf("\\")) + "\\";
+//        String extensionFile = toStringFile.substring(toStringFile.lastIndexOf("."));
+//        String uuid = UUID.randomUUID().toString();
+//
+//        if (!multipartFile.isEmpty()) {
+//            if (multipartFile.toString().endsWith(".jpg") || multipartFile.toString().endsWith(".png")) {
+//                try {
+//                    byte[] buff = multipartFile.getBytes();
+//
+//                    BufferedOutputStream outputStream = new BufferedOutputStream(new FileOutputStream(rootPath + uuid + extensionFile));
+//                    outputStream.write(buff);
+//                    outputStream.flush();
+//                    outputStream.close();
+//
+//                    fileService.saveFile(multipartFile);
+//
+//                    model.addAttribute("avatar", multipartFile);
+//
+//                    return "redirect:/my_page";
+//
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//            else {
+//                return "File " + fileName + " an unsupported extension" + ". Select a file with the extension jpg or png";
+//            }
+//        } else {
+//            return "File " + multipartFile.getName() + " is empty!";
+//        }
+//
+        return "File not found!";
+    }
+
+    @RequestMapping(value = "/edit_page", method = RequestMethod.GET)
+    public String editInfoBlock() {
+        return "edit_page";
     }
 }

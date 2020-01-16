@@ -10,13 +10,16 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+import java.util.List;
+
 
 @Slf4j
 @Controller
 @RequestMapping("/news")
 public class NewsController {
 
-    private final NewsService newsService;
+    private NewsService newsService;
 
     @Autowired
     public NewsController(NewsService newsService) {
@@ -26,16 +29,17 @@ public class NewsController {
     @RequestMapping(method = RequestMethod.GET)
     public String showNewsWall(Model model){
         log.info("showNewsWall method called");
-        model.addAttribute("allNews", newsService.getAllNews());
+        List<News> newsList = newsService.getAllNews();
+        model.addAttribute("newsList", newsList);
         
         return "news";
     }
 
-    @RequestMapping(value = "/{title}/{author}", method = RequestMethod.GET)
-    public News showNews(@PathVariable String title, @PathVariable String author) {
-        log.info("showNews method called");
-        return newsService.getByTitleAndAuthorName(title, author);
-    }
+//    @RequestMapping(value = "/{title}/{user}", method = RequestMethod.GET)
+//    public News showNews(@PathVariable String title, @PathVariable String user) {
+//        log.info("showNews method called");
+//        return newsService.getByTitleAndAuthorName(title, user);
+//    }
 
     @RequestMapping(value = "/create_news_form", method = RequestMethod.GET)
     public String createNewsForm(Model model) {
@@ -45,15 +49,17 @@ public class NewsController {
         return "create_news_form";
     }
 
-    @RequestMapping(value = "/create_news_form/submit", method = RequestMethod.POST)
-    public String submitNews(@ModelAttribute News news, BindingResult result) {
+    @RequestMapping(value = "/create_news_form", method = RequestMethod.POST)
+    public String submitNews(@ModelAttribute News news, BindingResult result, Model model) {
         log.info("submitNews method called");
 
         if(result.hasErrors()){
             return "create_news_form";
         }
 
+        model.addAttribute("news", news);
         newsService.saveNews(news);
+
         return "redirect:/news";
     }
 
