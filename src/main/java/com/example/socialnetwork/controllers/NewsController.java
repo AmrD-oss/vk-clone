@@ -26,7 +26,7 @@ public class NewsController {
         this.newsService = newsService;
     }
 
-    @RequestMapping(method = RequestMethod.GET)
+    @GetMapping
     public String showNewsWall(Model model){
         log.info("showNewsWall method called");
         List<News> newsList = newsService.getAllNews();
@@ -35,13 +35,13 @@ public class NewsController {
         return "news";
     }
 
-//    @RequestMapping(value = "/{title}/{user}", method = RequestMethod.GET)
-//    public News showNews(@PathVariable String title, @PathVariable String user) {
+//    @RequestMapping(value = "/{title}/{userEntity}", method = RequestMethod.GET)
+//    public News showNews(@PathVariable String title, @PathVariable String userEntity) {
 //        log.info("showNews method called");
-//        return newsService.getByTitleAndAuthorName(title, user);
+//        return newsService.getByTitleAndAuthorName(title, userEntity);
 //    }
 
-    @RequestMapping(value = "/create_news_form", method = RequestMethod.GET)
+    @GetMapping("/create_news_form")
     public String createNewsForm(Model model) {
         log.info("createNews method called");
         model.addAttribute("news", new News());
@@ -49,7 +49,7 @@ public class NewsController {
         return "create_news_form";
     }
 
-    @RequestMapping(value = "/create_news_form", method = RequestMethod.POST)
+    @PostMapping("/create_news_form")
     public String submitNews(@ModelAttribute News news, BindingResult result, Model model) {
         log.info("submitNews method called");
 
@@ -63,7 +63,7 @@ public class NewsController {
         return "redirect:/news";
     }
 
-    @RequestMapping(value = "/news/{id}", method = RequestMethod.DELETE)
+    @DeleteMapping("/news/{id}")
     @ResponseStatus(HttpStatus.ACCEPTED)
     public void deleteNews(@PathVariable Long id) {
         log.info("deleteNews method called");

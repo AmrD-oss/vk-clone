@@ -14,11 +14,14 @@ import java.time.LocalDateTime;
 @Data
 @Entity
 @Table(name = "news")
-@ToString(callSuper = true)
-@EqualsAndHashCode(callSuper = true)
+@ToString(of = {"id","title","description","dateOfCreation","userEntity"})
+@EqualsAndHashCode(of = {"id","title","description","dateOfCreation","userEntity"})
 @NoArgsConstructor
-@SequenceGenerator(name = "id_generator", sequenceName = "news_id")
-public class News extends IdIdentity{
+public class News {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @Column(nullable = false)
     @Size(min = 3, max = 100)
@@ -34,11 +37,11 @@ public class News extends IdIdentity{
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "author_id")
-    private User user;
+    private UserEntity userEntity;
 
-    public News(String title, String description, User user) {
+    public News(String title, String description, UserEntity userEntity) {
         this.title = title;
         this.description = description;
-        this.user = user;
+        this.userEntity = userEntity;
     }
 }

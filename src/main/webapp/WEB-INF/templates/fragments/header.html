@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/header.css}">
+</head>
+<body>
+    <div th:fragment="header" class="header_block">
+        <div><a href="/news"><img src="/images/vk-logo.png" class="logo" alt="Логотип"></a></div>
+        <div class="login"><a th:href="@{/login}">Sign In</a></div>
+    </div>
+</body>
+</html>

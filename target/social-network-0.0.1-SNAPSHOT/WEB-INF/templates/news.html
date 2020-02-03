@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8" content="text/html">
     <title>News</title>
-    <link rel="stylesheet" type="text/css" href="#" th:href="@{/static/css/header.css}">
-    <link rel="stylesheet" type="text/css" href="#" th:href="@{/static/css/nav_panel.css}">
-    <link rel="stylesheet" type="text/css" href="#" th:href="@{/static/css/news_wall.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/header.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/nav_panel.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/news_wall.css}">
 </head>
 <body>
     <header>
-        <div th:insert="~{nav_panel :: navigation_panel}"></div>
+        <div th:replace="fragments/nav_panel :: navigation_panel"></div>
     </header>
     <main>
         <div class="news_wall">

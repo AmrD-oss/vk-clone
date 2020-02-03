@@ -1,13 +1,11 @@
 package com.example.socialnetwork.controllers;
 
-import com.example.socialnetwork.models.User;
+import com.example.socialnetwork.models.UserEntity;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @Controller
@@ -15,21 +13,21 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @SuppressWarnings("Duplicates")
 public class EditPageController {
 
-    @RequestMapping(value = "make_changes", method = RequestMethod.GET)
+    @GetMapping("make_changes")
     public String changeInfoBlockForm(Model model) {
-        model.addAttribute("author", new User());
+        model.addAttribute("author", new UserEntity());
 
         return "make_changes";
     }
 
-    @RequestMapping(value = "make_changes", method = RequestMethod.POST)
-    public String changeInfoBlockSubmit(@ModelAttribute User user, Model model, BindingResult bindingResult) {
+    @PostMapping("make_changes")
+    public String changeInfoBlockSubmit(@ModelAttribute UserEntity userEntity, Model model, BindingResult bindingResult) {
 
         if(bindingResult.hasErrors()){
             return "edit_page";
         }
 
-        model.addAttribute("author", user);
+        model.addAttribute("author", userEntity);
 
         return "my_page";
     }

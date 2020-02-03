@@ -24,20 +24,20 @@ public class MyPageController {
         this.fileService = fileService;
     }
 
-    @RequestMapping(method = RequestMethod.GET)
+    @GetMapping
     public String showMyPage(Model model) {
         log.info("showMyPage method called");
 
         return "my_page";
     }
 
-    @RequestMapping(value = "/download_avatar_form", method = RequestMethod.GET)
+    @GetMapping("/download_avatar_form")
     public String downloadAvatarForm() {
         return "download_avatar_form";
     }
 
     @ResponseBody
-    @RequestMapping(value = "/download_avatar_form", method = RequestMethod.POST)
+    @PostMapping("/download_avatar_form")
     public String submitDownloadAvatarForm(@RequestParam("file") MultipartFile multipartFile, Model model) {
 //
 //        String fileName = multipartFile.getOriginalFilename();
@@ -76,7 +76,7 @@ public class MyPageController {
         return "File not found!";
     }
 
-    @RequestMapping(value = "/edit_page", method = RequestMethod.GET)
+    @GetMapping("/edit_page")
     public String editInfoBlock() {
         return "edit_page";
     }

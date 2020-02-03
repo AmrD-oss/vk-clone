@@ -47,7 +47,7 @@ public class NewsService {
         News newNews = new News();
 
         newNews.setTitle(news.getTitle());
-//        newNews.setUser(news.getUser());
+//        newNews.setUserEntity(news.getUserEntity());
         newNews.setDescription(news.getDescription());
 //        newNews.setDateOfCreation(news.getDateOfCreation());
 

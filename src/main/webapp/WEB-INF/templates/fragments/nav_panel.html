@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/nav_panel.css}">
+    <title></title>
+</head>
+<body>
+    <nav th:fragment="navigation_panel">
+        <div class="nav_panel">
+            <ul>
+                <li><img src="/images/home.png" alt="Моя страница"><a href="/my_page">My page</a></li>
+                <li><img src="/images/news.png" alt="Новости"><a href="/news">News</a></li>
+                <li><img src="/images/messages.png" alt="Сообщения"><a href="#">Messages</a></li>
+                <li><img src="/images/friends.png" alt="Друзья"><a href="#">Friends</a></li>
+                <li><img src="/images/groups.png" alt="Группы"><a href="#">Groups</a></li>
+                <li><img src="/images/photos.png" alt="Фотографии"><a href="#">Photos</a></li>
+                <li><img src="/images/music.png" alt="Музыка"><a href="#">Music</a></li>
+                <li><img src="/images/photos.png" alt="Фотографии"><a href="#">Video</a></li>
+                <li><a href="/news/create_news_form">Create news</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>

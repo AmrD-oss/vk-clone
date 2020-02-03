@@ -2,6 +2,14 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: #4682B4;
+}
+
+a:hover {
+    color: red;
+}
+
 li {
     list-style: none;
 }

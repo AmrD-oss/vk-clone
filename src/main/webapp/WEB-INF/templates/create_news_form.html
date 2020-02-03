@@ -2,17 +2,18 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/static/css/create_news_form.css" th:href="@{/static/css/create_news_form.css}">
-    <link rel="stylesheet" type="text/css" href="/static/css/header.css" th:href="@{/static/css/header.css}">
-    <link rel="stylesheet" type="text/css" href="#" th:href="@{/static/css/nav_panel.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/create_news_form.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/header.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/nav_panel.css}">
     <title>Title</title>
 </head>
 <body>
-    <header>
-        <div th:insert="~{nav_panel :: navigation_panel}"></div>
-    </header>
+
+    <div th:replace="header :: header"></div>
+    <div th:replace="nav_panel :: navigation_panel"></div>
+
     <div class="create_news_form">
-        <form method="post" class="news_form" action="#" th:action="@{/news/create_news_form}" th:object="${news}">
+        <form method="post" class="news_form" th:action="@{/news/create_news_form}" th:object="${news}">
             <div>
                 <label for="title">Заголовок</label>
                 <input type="text" id="title" th:field="*{title}" placeholder="Заголовок новости" name="title">

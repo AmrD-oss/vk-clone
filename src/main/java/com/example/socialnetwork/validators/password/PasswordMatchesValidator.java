@@ -1,6 +1,6 @@
 package com.example.socialnetwork.validators.password;
 
-import com.example.socialnetwork.models.User;
+import com.example.socialnetwork.models.UserEntity;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
@@ -12,7 +12,7 @@ public class PasswordMatchesValidator implements ConstraintValidator<ValidPasswo
     }
     @Override
     public boolean isValid(Object obj, ConstraintValidatorContext context){
-        User user = (User) obj;
-        return user.getPassword().equals(user.getMatchingPassword());
+        UserEntity userEntity = (UserEntity) obj;
+        return userEntity.getPassword().equals(userEntity.getMatchingPassword());
     }
 }

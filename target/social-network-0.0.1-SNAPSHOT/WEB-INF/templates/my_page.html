@@ -2,14 +2,14 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="#" th:href="@{/static/css/header.css}">
-    <link rel="stylesheet" type="text/css" href="#" th:href="@{/static/css/nav_panel.css}">
-    <link rel="stylesheet" type="text/css" href="#" th:href="@{/static/css/my_page.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/header.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/nav_panel.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/my_page.css}">
     <title>User-Page</title>
 </head>
 <body>
     <header>
-        <div th:insert="~{nav_panel :: navigation_panel}"></div>
+        <div th:replace="fragments/nav_panel :: navigation_panel"></div>
     </header>
     <main>
         <div class="avatar">
@@ -21,7 +21,7 @@
             <div class="settings"><a href="#"><img src="/images/settings_avatar.png" alt="Доп"></a></div>
         </div>
         <div class="info_block">
-            <!--&lt;!&ndash;<div class="name"><h3 th:text="${user.name}">Имя</h3></div>&ndash;&gt;-->
+            <!--<div class="name"><h3 th:text="${user.name}">Имя</h3></div>-->
             <!--<div class="surname"><h3 th:text="${user.surname}">Фамилия</h3></div>-->
             <!--<div class="online_status"><span>online-status</span></div>-->
             <!--<div class="status"><p th:text="${user.status}">изменить статус</p></div>-->
