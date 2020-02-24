@@ -1,11 +1,14 @@
 com\example\socialnetwork\controllers\NewsController.class
+com\example\socialnetwork\models\UserEntity.class
 com\example\socialnetwork\repositories\ChatRepo.class
 com\example\socialnetwork\validators\password\PasswordMatchesValidator.class
 com\example\socialnetwork\validators\EmailExistsException.class
 com\example\socialnetwork\validators\email\ValidEmail.class
 com\example\socialnetwork\repositories\UserRepo.class
+com\example\socialnetwork\service\SecurityService.class
 com\example\socialnetwork\repositories\RoleRepo.class
 com\example\socialnetwork\SocialNetworkApplication.class
+com\example\socialnetwork\service\SecurityServiceImpl.class
 com\example\socialnetwork\validators\email\EmailValidator.class
 com\example\socialnetwork\controllers\MainController.class
 com\example\socialnetwork\validators\password\ValidPassword.class
@@ -23,6 +26,5 @@ com\example\socialnetwork\controllers\LoginController.class
 com\example\socialnetwork\service\FileService.class
 com\example\socialnetwork\repositories\MessageRepo.class
 com\example\socialnetwork\models\News.class
-com\example\socialnetwork\models\User.class
 com\example\socialnetwork\controllers\EditPageController.class
 com\example\socialnetwork\controllers\RegistrationController.class

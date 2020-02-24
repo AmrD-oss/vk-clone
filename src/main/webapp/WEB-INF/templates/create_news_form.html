@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" th:href="@{/static/css/create_news_form.css}">
@@ -9,8 +12,8 @@
 </head>
 <body>
 
-    <div th:replace="header :: header"></div>
-    <div th:replace="nav_panel :: navigation_panel"></div>
+    <div th:replace="fragments/header :: header"></div>
+    <div th:replace="fragments/nav_panel :: navigation_panel"></div>
 
     <div class="create_news_form">
         <form method="post" class="news_form" th:action="@{/news/create_news_form}" th:object="${news}">
@@ -22,10 +25,9 @@
                 <label for="description">Описание</label>
                 <textarea cols="30" rows="6" id="description" th:field="*{description}" placeholder="Содержание..." name="description"></textarea>
             </div>
-            <!--<div>-->
-                <!--<label for="date">Date of creation</label>-->
-                <!--<input type="date" id="date" th:field="*{dateOfCreation}" th:value="${#temporals.format(news.dateOfCreation)}" placeholder="Дата создания" name="date_of_creation">-->
-            <!--</div>-->
+            <div>
+                Автор: <span th:text="${author_name}"></span> <span th:text="${author_surname}"></span>
+            </div>
             <div>
                 <button type="submit" value="Submit">Создать</button>
             </div>

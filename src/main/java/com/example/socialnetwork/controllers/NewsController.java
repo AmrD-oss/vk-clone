@@ -1,16 +1,20 @@
 package com.example.socialnetwork.controllers;
 
 import com.example.socialnetwork.models.News;
+import com.example.socialnetwork.models.UserEntity;
 import com.example.socialnetwork.service.NewsService;
+import com.example.socialnetwork.service.SecurityService;
+import com.example.socialnetwork.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 import java.util.List;
 
 
@@ -20,30 +24,33 @@ import java.util.List;
 public class NewsController {
 
     private NewsService newsService;
+    private UserService userService;
 
     @Autowired
-    public NewsController(NewsService newsService) {
+    public NewsController(NewsService newsService, UserService userService) {
         this.newsService = newsService;
+        this.userService = userService;
     }
 
     @GetMapping
     public String showNewsWall(Model model){
         log.info("showNewsWall method called");
         List<News> newsList = newsService.getAllNews();
+
         model.addAttribute("newsList", newsList);
         
         return "news";
     }
 
-//    @RequestMapping(value = "/{title}/{userEntity}", method = RequestMethod.GET)
-//    public News showNews(@PathVariable String title, @PathVariable String userEntity) {
-//        log.info("showNews method called");
-//        return newsService.getByTitleAndAuthorName(title, userEntity);
-//    }
 
     @GetMapping("/create_news_form")
     public String createNewsForm(Model model) {
         log.info("createNews method called");
+
+        UserEntity currentUser = userService.getAnAuthorizedUser();
+
+        model.addAttribute("author_name", currentUser.getName());
+        model.addAttribute("author_surname", currentUser.getSurname());
         model.addAttribute("news", new News());
 
         return "create_news_form";
@@ -57,7 +64,9 @@ public class NewsController {
             return "create_news_form";
         }
 
-        model.addAttribute("news", news);
+        UserEntity currentUser = userService.getAnAuthorizedUser();
+
+        news.setUserEntity(currentUser);
         newsService.saveNews(news);
 
         return "redirect:/news";

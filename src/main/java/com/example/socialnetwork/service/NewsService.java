@@ -1,9 +1,8 @@
 package com.example.socialnetwork.service;
 
 import com.example.socialnetwork.models.News;
-import com.example.socialnetwork.repositories.NewsRepo;
+import com.example.socialnetwork.repositories.NewsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,15 +11,15 @@ import java.util.NoSuchElementException;
 @Service
 public class NewsService {
 
-    private NewsRepo newsRepo;
+    private NewsRepository newsRepository;
 
     @Autowired
-    public NewsService(NewsRepo newsRepo) {
-        this.newsRepo = newsRepo;
+    public NewsService(NewsRepository newsRepository) {
+        this.newsRepository = newsRepository;
     }
 
     public List<News> getAllNews() {
-        return newsRepo.findAll();
+        return newsRepository.findAll();
     }
 
 //    public News getByTitleAndAuthorName(String title, @Nullable String authorName) {
@@ -52,7 +51,7 @@ public class NewsService {
 //        newNews.setDateOfCreation(news.getDateOfCreation());
 
         try {
-            newsRepo.save(newNews);
+            newsRepository.save(newNews);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -61,7 +60,7 @@ public class NewsService {
 
     public void deleteNews(Long id) {
         try {
-            newsRepo.deleteById(id);
+            newsRepository.deleteById(id);
         } catch (NoSuchElementException e){
             e.printStackTrace();
         }

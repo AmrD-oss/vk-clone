@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8" content="text/html">
     <title>avatar_form</title>
@@ -9,13 +12,18 @@
 </head>
 <body>
     <header>
-        <div th:insert="~{nav_panel :: navigation_panel}"></div>
+        <div th:replace="fragments/header :: header"></div>
+        <div th:replace="fragments/nav_panel :: navigation_panel"></div>
     </header>
     <main>
         <div class="download_file_block">
-            <form method="post" enctype="multipart/form-data" action="#" th:action="@{/my_page/download_avatar_form}">
-                <div class="select_file"><input type="file"></div>
-                <div class="submit_file"><input type="submit" value="submit"></div>
+            <form method="post" enctype="multipart/form-data" th:action="@{/my_page/download_avatar_form}">
+                <div class="select_file">
+                    <input type="file" name="file">
+                </div>
+                <div class="submit_file">
+                    <input type="submit" value="submit">
+                </div>
             </form>
         </div>
     </main>

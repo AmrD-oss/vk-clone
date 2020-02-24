@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -10,17 +13,29 @@
 <body>
 
     <div th:replace="fragments/header :: header"></div>
-    <div th:insert="~{nav_panel :: navigation_panel}"></div>
+    <div th:replace="fragments/nav_panel :: navigation_panel"></div>
 
     <main>
         <div class="edit_form">
-            <form method="post" id="edit_page_form" action="#" th:action="@{/edit_page/make_changes}" th:object="${userEntity}">
-                <div><label for="name">Имя:<input type="text" id="name" th:field="*{name}"></label></div>
-                <div><label for="surname">Фамилия:<input type="text" id="surname" th:field="*{surname}"></label></div>
-                <div><label for="status">Статус:<input type="text" id="status" th:field="*{status}"></label></div>
-                <div><label for="birthday">День рождения:<input type="text" id="birthday" th:field="*{dateOfBirth}" th:value="${#dates.format(news.dateOfBirth)}"></label></div>
-                <div><label for="city">Город:<input type="text" id="city" th:field="*{city}"></label></div>
-                <div><button type="submit" value="Внести изменения"></button></div>
+            <form method="post" th:action="@{/my_page/edit_page}">
+                <div>
+                    <label for="name">Name:<input type="text" id="name" th:text="${updated_name}"></label>
+                </div>
+                <div>
+                    <label for="surname">Surname:<input type="text" id="surname" th:text="${updated_surname}"></label>
+                </div>
+                <div>
+                    <label for="status">Status:<input type="text" id="status" th:text="${updated_status}"></label>
+                </div>
+                <div>
+                    <label for="birthday">Birthday:<input type="date" id="birthday" th:text="${updated_birthday}" th:value="${#dates.format(updated_birthday)}"></label>
+                </div>
+                <div>
+                    <label for="city">City:<input type="text" id="city" th:text="${updated_city}"></label>
+                </div>
+                <div>
+                    <button type="submit" value="Внести изменения"></button>
+                </div>
             </form>
         </div>
     </main>

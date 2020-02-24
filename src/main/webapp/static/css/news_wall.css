@@ -7,20 +7,26 @@ table {
     border-spacing: 10px;
 }
 
+div {
+    font-size: 16px;
+}
+
 .news_wall {
     position: relative;
-    left: 400px;
+    left: 300px;
     top: 50px;
     margin-top: 20px;
-    text-align: left;
 }
 
 .news_wall .news {
     width: 500px;
     height: 300px;
-    background-color: snow;
+    position: relative;
+    top: -40px;
+    left: 100px;
+    background-color: white;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
     margin-bottom: 20px;
 }
 
@@ -44,5 +50,7 @@ table {
 }
 
 .news_wall .news .author {
-
+    position: absolute;
+    left: 90px;
+    top: 60px;
 }

@@ -2,54 +2,241 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="053fac0b-ae29-4778-b419-5376f6286397" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/UserRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/social_network_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/social_network_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/social-network.iml" beforeDir="false" afterPath="$PROJECT_DIR$/social-network.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/mvcConfig/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/mvcConfig/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/mvcConfig/WebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/mvcConfig/WebAppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/AuthorPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/SocialNetworkApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/SocialNetworkApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/WebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/WebAppInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/MyPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/MyPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/NewsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/RegistrationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/News.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/NewsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/NewsRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/UsersRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/ChatRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/ChatRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/FileRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/MessageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/MessageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/NewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/NewsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/FileService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/NewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/NewsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/SecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/SecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/SecurityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/SecurityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/create_news_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/create_news_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/download_avatar_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/download_avatar_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/edit_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/edit_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/nav_panel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/my_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/my_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/nav_panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/nav_panel.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/create_news_form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/create_news_form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/friends.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/groups.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/messages.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/navigation/camera.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/news.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/photos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/settings_avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/video.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/vk-logo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/my_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/my_page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/nav_panel.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/news_wall.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/news_wall.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/social-network.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/registration.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/ServletInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/SocialNetworkApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/config/mvcConfig/MvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/config/mvcConfig/WebAppInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/controllers/AuthorPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/controllers/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/controllers/MyPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/controllers/NewsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/models/Author.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/models/Chat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/models/IdIdentity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/models/News.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/SocialNetworkApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/SocialNetworkApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/config/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/config/MvcConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/config/WebAppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/config/WebAppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/controllers/MyPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/controllers/MyPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/controllers/NewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/controllers/NewsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/controllers/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/controllers/RegistrationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/models/News.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/models/News.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/models/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/models/UserEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/repositories/ChatRepo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/repositories/MessageRepo.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/repositories/NewsRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/repositories/UsersRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/service/NewsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/repositories/RoleRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/repositories/UserRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/service/FileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/service/FileService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/service/NewsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/service/NewsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/service/SecurityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/service/SecurityService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/service/SecurityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/service/SecurityServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT.war.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/ServletInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/SocialNetworkApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/config/MvcConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/config/WebAppInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/controllers/EditPageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/controllers/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/controllers/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/controllers/MyPageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/controllers/NewsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/controllers/RegistrationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/models/Chat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/models/News.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/models/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/models/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/repositories/ChatRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/repositories/MessageRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/repositories/NewsRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/repositories/RoleRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/repositories/UserRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/service/FileService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/service/NewsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/validators/EmailExistsException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/validators/email/EmailValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/validators/email/ValidEmail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/validators/password/PasswordMatchesValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/validators/password/ValidPassword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/HikariCP-3.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.9.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/attoparser-2.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/byte-buddy-1.9.16.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/classmate-1.4.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/commons-io-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/dom4j-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/evo-inflector-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-5.0.4.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-core-5.3.11.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-validator-6.0.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-validator-annotation-processor-6.0.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-2.9.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-databind-2.9.9.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jdk8-2.9.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jsr310-2.9.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-module-parameter-names-2.9.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jandex-2.0.5.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/javassist-3.23.2-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/javax.annotation-api-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/javax.mail-1.6.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/javax.transaction-api-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/javax.xml.soap-api-1.4.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jaxws-api-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.28.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-api-2.11.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.11.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/mimepull-1.9.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/ognl-3.1.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/postgresql-42.2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/saaj-impl-1.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.28.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/snakeyaml-1.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aop-5.1.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aspects-5.1.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-beans-5.1.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-2.1.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.1.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.1.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-aop-2.1.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-data-jpa-2.1.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-data-rest-2.1.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-jdbc-2.1.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-json-2.1.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.1.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-mail-2.1.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-security-2.1.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-2.1.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-services-2.1.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-websocket-2.1.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-5.1.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-support-5.1.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-core-5.1.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-commons-2.1.10.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-jpa-2.1.10.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-rest-core-3.1.10.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-rest-webmvc-3.1.10.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-expression-5.1.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-hateoas-0.25.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jcl-5.1.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.1.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-messaging-5.1.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-orm-5.1.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-oxm-5.1.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-plugin-core-1.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-acl-5.1.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-config-5.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-core-5.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-taglibs-5.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-web-5.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-session-core-2.1.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-tx-5.1.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-5.1.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.1.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-websocket-5.1.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-ws-core-3.0.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-xml-3.0.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/stax-ex-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/thymeleaf-3.0.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/thymeleaf-extras-java8time-3.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/thymeleaf-extras-springsecurity4-3.0.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/thymeleaf-spring4-3.0.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/unbescape-1.1.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/validation-api-2.0.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/create_news_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/download_avatar_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/edit_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/fragments/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/fragments/nav_panel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/messages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/my_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/news.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/registration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/welcome_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/camera.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/friends.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/groups.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/messages.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/news.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/photos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/settings_avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/video.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/vk-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/css/create_news_form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/css/download_avatar_form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/css/edit_page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/css/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/css/my_page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/css/nav_panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/css/news_wall.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2020-01-28T20-20-36_394-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.socialnetwork.SocialNetworkApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.socialnetwork.SocialNetworkApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.socialnetwork.SocialNetworkApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.socialnetwork.SocialNetworkApplicationTests.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -70,85 +257,93 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="social_network@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="social_network@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="social_network@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="social_network: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="social_network@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="social_network: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="social_network@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="social_network: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="social_network@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="social_network: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/TheRegistrationController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/MyPageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="49" column="24" lean-forward="true" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+            <state relative-caret-position="-114">
+              <caret line="79" column="51" selection-start-line="79" selection-start-column="51" selection-end-line="79" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1582432378197" expanded="true" signature="2696:3115" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/UserService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/my_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            <state relative-caret-position="612">
+              <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#li#0;n#ul#0;n#div#3;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#li#3;n#ul#0;n#div#3;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#li#4;n#ul#0;n#div#3;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/my_page.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="201" column="1" lean-forward="true" selection-start-line="201" selection-start-column="1" selection-end-line="201" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/validators/EmailExistsException.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="e#47#74#0" expanded="true" />
-                <element signature="e#184#185#0" expanded="true" />
-                <element signature="e#214#215#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/MyUserDetailService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="43" column="64" lean-forward="true" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#934#935#0" expanded="true" />
-                <element signature="e#986#987#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/mvcConfig/SecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="31" column="75" lean-forward="true" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1151#1152#0" expanded="true" />
-                <element signature="e#1211#1212#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-284">
-              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="39">
+              <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -158,11 +353,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
         <option value="CSS File" />
         <option value="HTML File" />
-        <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -172,59 +368,70 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/ChatRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/header.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/css/nav_panel.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/messages.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/css/header.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/css/news_wall.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/EditMyPageService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/EditMyPageController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/InfoPageBlockRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/EditPageService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/nav_panel.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/AuthorRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/Role.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/edit_page.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/css/my_page.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/EditPageController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/edit_page.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/download_avatar_form.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/download_avatar_form.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/my_page.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/MyPageController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/FileRepo.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/create_news_form.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/Author.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/FileService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/NewsController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/news.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/NewsService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/create_news_form.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/News.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/mvcConfig/SeurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/mvcConfig/WebAppInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/mvcConfig/MvcConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/registration.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/validators/ValidEmail.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/validators/email/EmailValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/validators/email/ValidEmail.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/validators/password/PasswordMatchesValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/NewsRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login-error.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/SecurityService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/SpingConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/UserRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/css/login.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/WebAppInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/EditPageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/SecurityServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/edit_page.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/RegistrationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/SocialNetworkApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/NewsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/FileRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/FileRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/css/registration.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/components/DateFormatter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/components/VarietyFormatter.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/css/nav_panel.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/News.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/create_news_form.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/registration.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/UserEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/FileService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/download_avatar_form.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/nav_panel.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/news.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/css/news_wall.css" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/validators/password/ValidPassword.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/IUserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/TheRegistrationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/Date.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/Valute.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/ExchangeRates.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/ValuteController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/MyUserDetailService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/mvcConfig/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/validators/EmailExistsException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/MyPageController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/p.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/js/my_page.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/MvcConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/js/header.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/css/header.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/my_page.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/css/my_page.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/header.html" />
       </list>
     </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -245,13 +452,19 @@
           <item name="social-network" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="social-network" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="420" />
-    <option name="width" value="981" />
+    <option name="x" value="235" />
+    <option name="y" value="40" />
+    <option name="width" value="1472" />
     <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -259,9 +472,12 @@
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -334,18 +550,6 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
               <item name="socialnetwork" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="mvcConfig" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social-network" type="b2602c69:ProjectViewProjectNode" />
-              <item name="social-network" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="socialnetwork" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -368,41 +572,7 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
               <item name="socialnetwork" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social-network" type="b2602c69:ProjectViewProjectNode" />
-              <item name="social-network" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="socialnetwork" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social-network" type="b2602c69:ProjectViewProjectNode" />
-              <item name="social-network" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="socialnetwork" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="MyUserDetailService.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="social-network" type="b2602c69:ProjectViewProjectNode" />
-              <item name="social-network" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="socialnetwork" type="462c0819:PsiDirectoryNode" />
-              <item name="validators" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="social-network" type="b2602c69:ProjectViewProjectNode" />
@@ -440,15 +610,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="social-network" type="b2602c69:ProjectViewProjectNode" />
-              <item name="social-network" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -460,42 +621,58 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="social-network" type="b2602c69:ProjectViewProjectNode" />
+              <item name="social-network" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="fragments" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579214195405" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Practic" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582513505094" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../converter" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.socialnetwork" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\IdeaProjects\social-network\src\main\webapp\WEB-INF\templates\fragments" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.socialnetwork.models" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\IdeaProjects\social-network\src\main\webapp\images\avatars" />
+      <recent name="C:\Users\PC\IdeaProjects\social-network\src\main\webapp\images\navigation" />
+      <recent name="C:\Users\PC\IdeaProjects\social-network\src\main\webapp\images\about" />
+      <recent name="C:\Users\PC\IdeaProjects\social-network\src\main\webapp\images\\" />
       <recent name="C:\Users\PC\IdeaProjects\social-network\src\main\webapp\images" />
-      <recent name="C:\Users\PC\IdeaProjects\social-network\src\main\webapp" />
-      <recent name="C:\Users\PC\IdeaProjects\social-network\src\main\resources\images" />
-      <recent name="C:\Users\PC\IdeaProjects\social-network\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\PC\IdeaProjects\social-network\src\main\resources\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -550,12 +727,27 @@
       <workItem from="1577228794250" duration="25416000" />
       <workItem from="1578190545101" duration="11370000" />
       <workItem from="1578408968065" duration="5519000" />
-      <workItem from="1578870720510" duration="10794000" />
+      <workItem from="1578870720510" duration="40759000" />
+      <workItem from="1580018364650" duration="68937000" />
+      <workItem from="1580806123758" duration="29278000" />
+      <workItem from="1581026264798" duration="1754000" />
+      <workItem from="1581074258261" duration="18000" />
+      <workItem from="1581110106884" duration="1996000" />
+      <workItem from="1581296890020" duration="300000" />
+      <workItem from="1581377777334" duration="5091000" />
+      <workItem from="1581438618014" duration="263000" />
+      <workItem from="1581439155745" duration="1527000" />
+      <workItem from="1581442677403" duration="11000" />
+      <workItem from="1581455792907" duration="873000" />
+      <workItem from="1581538602611" duration="26345000" />
+      <workItem from="1581687106805" duration="2000" />
+      <workItem from="1581687303953" duration="45611000" />
+      <workItem from="1581967185747" duration="87872000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="320826000" />
+    <option name="totallyTimeSpent" value="620669000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -570,39 +762,40 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21700405" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49850747" visible="true" weight="0.15708502" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.57015985" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.3285968" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.40319717" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3285968" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3285968" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Duplicate detector" order="15" weight="0.3285968" />
+      <window_info id="Web" order="7" sideWeight="0.50149256" side_tool="true" weight="0.22024292" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.3285968" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3285968" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.41207814" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.3516874" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.3285968" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.3285968" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.40319717" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3285968" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="Duplicate detector" order="16" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32955465" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.23076923" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Database" order="8" weight="0.32955465" />
+      <window_info anchor="right" id="Database" order="8" weight="0.15708502" />
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
@@ -610,464 +803,378 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/java/lang/String.class">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login-error.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/components/DateFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="483" column="19" selection-start-line="483" selection-start-column="19" selection-end-line="483" selection-end-column="19" />
+        <state relative-caret-position="204">
+          <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
           <folding>
-            <element signature="e#14775#14776#0" expanded="true" />
-            <element signature="e#14858#14859#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/format/annotation/DateTimeFormat.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.1.RELEASE/spring-security-core-5.2.1.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetails.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE-sources.jar!/org/thymeleaf/expression/Dates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2320">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/edit_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/java/io/File.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11256">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/MessageRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.9.RELEASE/spring-beans-5.1.9.RELEASE.jar!/org/springframework/beans/factory/support/ConstructorResolver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="601" selection-start-line="601" selection-end-line="601" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-rest-webmvc/3.1.10.RELEASE/spring-data-rest-webmvc-3.1.10.RELEASE.jar!/org/springframework/data/rest/webmvc/config/RepositoryRestMvcConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="212" column="24" selection-start-line="212" selection-start-column="24" selection-end-line="212" selection-end-column="24" />
-          <folding>
-            <element signature="e#12059#12060#0" expanded="true" />
-            <element signature="e#12123#12124#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/FileRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/nav_panel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/my_page.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/create_news_form.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar!/lombok/Data.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.8.RELEASE/spring-boot-autoconfigure-2.1.8.RELEASE.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="101" column="50" selection-start-line="101" selection-start-column="50" selection-end-line="101" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/messages.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/download_avatar_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar!/lombok/NoArgsConstructor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/Chat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/FileService.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/SocialNetworkApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#339#340#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/create_news_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="26" column="22" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="26" selection-end-column="22" />
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/News.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="232">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/EditPageController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/RegistrationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="124">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/FileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#297#327#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE.jar!/org/springframework/web/bind/annotation/RequestParam.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/nav_panel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="4" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/nav_panel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/avatars/defolt-avatar.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/navigation/friends.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/navigation/home.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/embed.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/news_wall.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="60" column="73" selection-start-line="60" selection-start-column="73" selection-end-line="60" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/download_avatar_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/create_news_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/UserEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/java/lang/Object.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.9.9/jackson-core-2.9.9.jar!/com/fasterxml/jackson/core/TreeCodec.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.9.9/jackson-core-2.9.9.jar!/com/fasterxml/jackson/core/ObjectCodec.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.9.3/jackson-databind-2.9.9.3.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="1113" selection-start-line="1113" selection-end-line="1113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE.jar!/org/springframework/http/HttpHeaders.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="385" selection-start-line="385" selection-end-line="385" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="179" column="48" lean-forward="true" selection-start-line="179" selection-start-column="48" selection-end-line="179" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/Chat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/Date.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/Valute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/NewsController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/EntityManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="102">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/ExchangeRates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/ValuteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/json/ExchangeRates.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/java/util/Objects.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.10.2/jackson-databind-2.10.2.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/p.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4385" column="4" selection-start-line="4385" selection-start-column="4" selection-end-line="4385" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-709">
+          <caret line="77" column="32" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1523#1554#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/MvcConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="70" column="47" lean-forward="true" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="61" column="58" lean-forward="true" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/avatars/5NKnfW9NtE4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/my_page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="201" column="1" lean-forward="true" selection-start-line="201" selection-start-column="1" selection-end-line="201" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/MyPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-553">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        <state relative-caret-position="-114">
+          <caret line="79" column="51" selection-start-line="79" selection-start-column="51" selection-end-line="79" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1582432378197" expanded="true" signature="2696:3115" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/my_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        <state relative-caret-position="612">
+          <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
           <folding>
-            <marker date="1578439888448" expanded="true" signature="546:1059" ph="..." />
+            <element signature="n#style#0;n#span#1;n#li#0;n#ul#0;n#div#3;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#li#3;n#ul#0;n#div#3;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#li#4;n#ul#0;n#div#3;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/mvcConfig/WebAppInitializer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1038#1039#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
-            <element signature="e#1133#1134#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1285#1286#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/mvcConfig/MvcConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1515#1516#0" expanded="true" />
-            <element signature="e#1538#1539#0" expanded="true" />
-            <marker date="1579039622375" expanded="true" signature="1755:2015" ph="..." />
-            <marker date="1579039622375" expanded="true" signature="1760:2015" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/IdIdentity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/nav_panel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/registration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.6.RELEASE/spring-security-core-5.1.6.RELEASE.jar!/org/springframework/security/core/userdetails/User.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/validators/email/EmailValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/java/lang/annotation/Target.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/java/lang/annotation/ElementType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/validators/password/PasswordMatchesValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/NewsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/NewsRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/repositories/UserRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="142" column="56" selection-start-line="142" selection-start-column="56" selection-end-line="142" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/validators/email/ValidEmail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/validators/password/ValidPassword.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/IUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/TheRegistrationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="49" column="24" lean-forward="true" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-284">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/MyUserDetailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="43" column="64" lean-forward="true" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/mvcConfig/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="31" column="75" lean-forward="true" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1211#1212#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/validators/EmailExistsException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#47#74#0" expanded="true" />
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="39">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
         </state>
       </provider>
     </entry>

@@ -1,4 +1,4 @@
 package com.example.socialnetwork.repositories;
 
-public interface MessageRepo {
+public interface MessageRepository {
 }

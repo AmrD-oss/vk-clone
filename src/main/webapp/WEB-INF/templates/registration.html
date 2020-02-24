@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <title></title>
     <meta charset="UTF-8">
@@ -27,10 +30,35 @@
                 </div>
                 <div class="confirm-password">
                     <label>confirm:<input class="confirm-password_inp" type="password" th:field="*{matchingPassword}"/></label>
+                    <p th:each="error:${#fields.errors('matchingPassword')}" th:text="${error}">Validation error</p>
                 </div>
                 <div class="email">
                     <label>email:<input class="email_inp" type="email" th:field="*{email}"/></label>
                     <p th:each="error:${#fields.errors('email')}" th:text="${error}">Validation error</p>
+                </div>
+                <div class="name">
+                    <label>name:<input class="name_inp" type="text" th:field="*{name}"/></label>
+                    <p th:each="error:${#fields.errors('name')}" th:text="${error}">Validation error</p>
+                </div>
+                <div class="surname">
+                    <label>surname:<input class="surname_inp" type="text" th:field="*{surname}"/></label>
+                    <p th:each="error:${#fields.errors('surname')}" th:text="${error}">Validation error</p>
+                </div>
+                <div class="avatar">
+                    <label>avatar:<input class="avatar_inp" type="file" th:field="*{avatar}"/></label>
+                    <p th:each="error:${#fields.errors('avatar')}" th:text="${error}">Validation error</p>
+                </div>
+                <div class="status">
+                    <label>status:<input class="status_inp" type="text" th:field="*{status}"/></label>
+                    <p th:each="error:${#fields.errors('status')}" th:text="${error}">Validation error</p>
+                </div>
+                <div class="birthday">
+                    <label>date of birthday:<input class="birthday_inp" type="date" th:field="*{dateOfBirth}"/></label>
+                    <p th:each="error:${#fields.errors('dateOfBirth')}" th:text="${error}">Validation error</p>
+                </div>
+                <div class="city">
+                    <label>city:<input class="city_inp" type="text" th:field="*{city}"/></label>
+                    <p th:each="error:${#fields.errors('city')}" th:text="${error}">Validation error</p>
                 </div>
                 <button class="submit" type="submit">Register</button>
             </form>

@@ -1,9 +1,9 @@
 package com.example.socialnetwork.config;
 
 import com.example.socialnetwork.service.UserService;
-import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -16,6 +16,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Configuration
 @EnableWebSecurity
+@ComponentScan("com.example.socialnetwork")
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
@@ -23,8 +24,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
-        httpSecurity
-                .authorizeRequests()
+        httpSecurity.authorizeRequests()
                     .antMatchers("/registration").permitAll()
                     .anyRequest().authenticated();
 
@@ -38,6 +38,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         httpSecurity.logout()
                     .permitAll()
+//                    .logoutUrl("/hee")
                     .logoutSuccessUrl("/login")
                     .invalidateHttpSession(true)
                     .deleteCookies("JSESSIONID");
@@ -46,7 +47,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .headers()
                     .cacheControl().disable()
                 .and()
-                .csrf().disable();
+                    .csrf().disable();
     }
 
     @Autowired

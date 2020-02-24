@@ -1,9 +1,9 @@
+C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\service\SecurityService.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\repositories\MessageRepo.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\validators\password\PasswordMatchesValidator.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\validators\password\ValidPassword.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\validators\email\EmailValidator.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\controllers\EditPageController.java
-C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\models\User.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\service\UserService.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\ServletInitializer.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\controllers\MainController.java
@@ -24,6 +24,8 @@ C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\SocialNetworkApplication.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\repositories\FileRepo.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\repositories\NewsRepo.java
+C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\models\UserEntity.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\controllers\RegistrationController.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\controllers\LoginController.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\config\WebAppInitializer.java
+C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\service\SecurityServiceImpl.java

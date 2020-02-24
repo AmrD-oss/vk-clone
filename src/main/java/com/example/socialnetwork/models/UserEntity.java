@@ -1,9 +1,8 @@
 package com.example.socialnetwork.models;
 
 
-import com.example.socialnetwork.validators.email.ValidEmail;
-import com.example.socialnetwork.validators.password.ValidPassword;
 import lombok.*;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -11,6 +10,7 @@ import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import java.time.LocalDate;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
@@ -44,25 +44,14 @@ public class UserEntity implements UserDetails {
     @NotEmpty
     private String email;
 
-    @Transient
     private String name;
-
-    @Transient
     private String surname;
-
-    @Transient
     private String avatar;
-
-    @Transient
     private Boolean online = false;
-
-    @Transient
     private String status;
 
-    @Transient
-    private Date dateOfBirth;
-
-    @Transient
+    @DateTimeFormat(pattern = "dd-MMMM")
+    private LocalDate dateOfBirth;
     private String city;
 
     @OneToMany(mappedBy = "userEntity", cascade = CascadeType.ALL, fetch = FetchType.LAZY)

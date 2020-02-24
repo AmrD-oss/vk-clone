@@ -51,7 +51,6 @@ public class RegistrationController {
         }
 
         userService.saveUser(account);
-
         securityService.autoLogin(account.getUsername(), account.getMatchingPassword());
 
         return "redirect:/login";

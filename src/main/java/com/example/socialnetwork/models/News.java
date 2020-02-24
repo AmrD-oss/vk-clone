@@ -1,15 +1,14 @@
 package com.example.socialnetwork.models;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Data
 @Entity
@@ -17,6 +16,7 @@ import java.time.LocalDateTime;
 @ToString(of = {"id","title","description","dateOfCreation","userEntity"})
 @EqualsAndHashCode(of = {"id","title","description","dateOfCreation","userEntity"})
 @NoArgsConstructor
+@AllArgsConstructor
 public class News {
 
     @Id
@@ -32,8 +32,7 @@ public class News {
     private String description;
 
     @Column
-    @DateTimeFormat(pattern = "HH:mm d MMM")
-    private LocalDateTime dateOfCreation = LocalDateTime.now();
+    private Date dateOfCreation = new Date();
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "author_id")

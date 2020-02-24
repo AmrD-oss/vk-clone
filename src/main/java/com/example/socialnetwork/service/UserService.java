@@ -1,48 +1,63 @@
 package com.example.socialnetwork.service;
 
+import com.example.socialnetwork.models.ExchangeRates;
 import com.example.socialnetwork.models.Role;
 import com.example.socialnetwork.models.UserEntity;
-import com.example.socialnetwork.repositories.RoleRepo;
-import com.example.socialnetwork.repositories.UserRepo;
+import com.example.socialnetwork.models.Valute;
+import com.example.socialnetwork.repositories.RoleRepository;
+import com.example.socialnetwork.repositories.UserRepository;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.http.*;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import javax.persistence.EntityManager;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.io.IOException;
+import java.util.*;
 
 @Service
 public class UserService implements UserDetailsService {
 
+    @Value("${application.cbr-daily-json}")
+    private String URL;
+
+    private final RestTemplate restTemplate;
     private final EntityManager entityManager;
-    private final UserRepo userRepository;
-    private final RoleRepo roleRepository;
+    private final UserRepository userRepository;
+    private final RoleRepository roleRepository;
     private final BCryptPasswordEncoder passwordEncoder;
 
     @Autowired
-    public UserService(EntityManager entityManager, UserRepo userRepository, RoleRepo roleRepository, BCryptPasswordEncoder passwordEncoder) {
+    public UserService(RestTemplateBuilder restTemplateBuilder,
+                       EntityManager entityManager,
+                       UserRepository userRepository,
+                       RoleRepository roleRepository,
+                       BCryptPasswordEncoder passwordEncoder) {
+        this.restTemplate = restTemplateBuilder.build();
         this.entityManager = entityManager;
         this.userRepository = userRepository;
         this.roleRepository = roleRepository;
         this.passwordEncoder = passwordEncoder;
     }
 
-
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         UserEntity userEntity = userRepository.findByUsername(username);
 
         if(userEntity == null) {
-            throw new UsernameNotFoundException("Пользователя с таким логином не существует!");
+            throw new UsernameNotFoundException("Пользователя с логином: " + userEntity.getUsername() + " не существует!");
         }
 
         Set<GrantedAuthority> grantedAuthorities = new HashSet<>();
@@ -53,6 +68,18 @@ public class UserService implements UserDetailsService {
         return new User(userEntity.getUsername(), userEntity.getPassword(), grantedAuthorities);
     }
 
+    public UserEntity getAnAuthorizedUser() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        UserEntity currentUser = null;
+
+        try {
+            currentUser = findUserByUsername(authentication.getName());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return currentUser;
+    }
 
     public UserEntity findUserById(Long userId) {
         return userRepository.findById(userId).orElseThrow(
@@ -85,14 +112,75 @@ public class UserService implements UserDetailsService {
         return true;
     }
 
+    public void updateUser(UserEntity userEntity) {
+        UserEntity userEntityFromDB = userRepository.findByUsername(userEntity.getUsername());
+
+        userEntityFromDB.setName(userEntity.getName());
+        userEntityFromDB.setSurname(userEntity.getSurname());
+        userEntityFromDB.setAvatar(userEntity.getAvatar());
+        userEntityFromDB.setStatus(userEntity.getStatus());
+        userEntityFromDB.setDateOfBirth(userEntity.getDateOfBirth());
+        userEntityFromDB.setCity(userEntity.getCity());
+
+        saveUser(userEntityFromDB);
+    }
+
 
     public boolean deleteUser(Long userId) {
-        if(userRepository.findById(userId).isPresent()){
+        if(userRepository.findById(userId).isPresent()) {
             userRepository.deleteById(userId);
-
             return true;
         }
 
         return false;
+    }
+
+//    public List<Valute> getValute() {
+//
+//    }
+//
+//    private boolean checkValuteName(String name) {
+//        List<String> valutesName = Arrays.asList(
+//                "AUD","AZN","GBP","AMD", "BYN",
+//                "BGN","BRL","HUF", "HKD","DKK",
+//                "USD","EUR", "INR","KZT","CAD",
+//                "KGS", "CNY","MDL","NOK","PLN",
+//                "RON","XDR","SGD","TJS", "TRY",
+//                "TMT","UZS","UAH", "CZK","SEK",
+//                "CHF","ZAR","KRW","JPY");
+//
+//        for(String valute : valutesName) {
+//            return name.equals(valute);
+//        }
+//
+//        return false;
+//    }
+
+    public Map<String, Valute> getAllValutes() {
+        ExchangeRates exchangeRates = null;
+
+        ObjectMapper mapper = new ObjectMapper();
+
+        try {
+            exchangeRates = mapper.readValue(getStringDataOnValutes(), ExchangeRates.class);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return Objects.requireNonNull(exchangeRates).getValute();
+    }
+
+    private String getStringDataOnValutes() {
+        HttpHeaders headers = new HttpHeaders();
+        headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
+        HttpEntity<String> entity = new HttpEntity<>(headers);
+        ResponseEntity<String> response = restTemplate.exchange(
+                URL,
+                HttpMethod.GET,
+                entity,
+                String.class
+        );
+
+        return response.getBody();
     }
 }

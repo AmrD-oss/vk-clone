@@ -4,40 +4,150 @@
 }
 
 body {
-    background-color: #edeef0;
     font-family: "Tahoma", sans-serif;
     font-size: 13px;
 }
 
-.logo {
-    width: 150px;
-    height: 70px;
-    position: fixed;
-    top: -15px;
-    margin-left: 100px;
+li {
+    list-style-type: none;
 }
 
 .header_block {
     width: 100%;
-    height: 45px;
-    position: fixed;
-    top: 0;
-    background-color: #4682B4;
+    height: 50px;
+    margin-bottom: 50px;
+    background-color: #1f1c1c;
 }
 
-.login {
-    width: 70px;
+.navigation {
+    width: 1000px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_block .logo {
+    float: left;
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    left: 160px;
+}
+
+.header_block .logo a {
+    display: block;
+}
+
+.header_block .logo img {
+    width: 40px;
+    height: 50px;
+}
+
+.header_block .search {
+    width: 270px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    position: absolute;
+    left: 210px;
+}
+
+.header_block .search input {
+    width: 250px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid grey;
+    padding: 5px;
+    margin-top: 8px;
+}
+
+.header_block .login {
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    float: right;
+    position: absolute;
+    left: 976.5px;
+    background-color: #3d3939;
+    transition: 0.2s;
+}
+
+.header_block .login:hover {
+    background-color: #4f4d4d;
+}
+
+
+.header_block .login .img_block {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 1px;
+    text-align: center;
+    float: left;
+    margin: 7px;
+}
+
+.header_block .login .img_block img {
+    width: 30px;
     height: 30px;
-    margin-top: 10px;
-    position: fixed;
-    top: 4px;
-    right: 0;
+    margin-top: 2px;
 }
 
-.login a {
+.header_block .login .username {
     color: white;
+    float: left;
+    margin: 15px 0 0 5px;
 }
 
-.login div:hover {
-    background-color: darkgrey;
+.header_block .login .arrow_down {
+    float: right;
+    position: absolute;
+    top: 10px;
+    left: 90px;
 }
+
+.header_block .login .arrow_down img {
+    width: 30px;
+    height: 30px;
+}
+
+.header_block .nav_panel {
+    width: 500px;
+    height: 50px;
+    margin-right: 130px;
+    list-style: none;
+    float: right;
+    text-align: center;
+}
+
+.header_block .nav_panel ul {
+    overflow: hidden;
+}
+
+.header_block .nav_panel li {
+    float: left;
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+
+.header_block .nav_panel li:hover {
+    background-color: darkslateblue;
+    transform: scale(1.3);
+}
+
+.header_block .nav_panel li a {
+    display: block;
+}
+
+.header_block .nav_panel img {
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+
