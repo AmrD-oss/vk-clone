@@ -6,7 +6,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" th:href="@{/static/css/header.css}">
-    <link rel="stylesheet" type="text/css" th:href="@{/static/css/nav_panel.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/static/css/my_page.css}">
     <title th:text="${name}"></title>
 </head>
@@ -35,13 +34,15 @@
         </div>
         <div class="edit_block">
             <div class="change_avatar">
-                <a th:href="@{/}"><img src="/images/navigation/ch_avatar.png" alt="ch_avatar" onmouseover="mouseOver()" onmouseout="mouseOut()"><span class="block">Change avatar</span></a>
+                <a th:href="@{/}"><img src="/images/navigation/ch_avatar.png" alt="ch_avatar" onmouseover="mouseOver()"
+                                       onmouseout="mouseOut()"><span class="block">Change avatar</span></a>
             </div>
             <div class="edit">
                 <a th:href="@{/}"><img src="/images/navigation/edit.png" alt="edit"><span class="block">Edit Profile</span></a>
             </div>
             <div class="change_cover">
-                <a th:href="@{/}"><img src="/images/navigation/cover.png" alt="cover"><span class="block">Change cover</span></a>
+                <a th:href="@{/}"><img src="/images/navigation/cover.png" alt="cover"><span
+                        class="block">Change cover</span></a>
             </div>
             <div class="somebody">
                 <a th:href="@{/}"><img src="/images/navigation/music.png" alt="somebody"><span class="block">Somebody</span></a>
@@ -58,7 +59,7 @@
                 <img src="/images/about/surname.png" alt="surname"><span class="about_text" th:text="${surname}"></span>
             </div>
             <div class="birthday">
-                <img src="/images/about/birthday.png" alt="birthday"><span class="about_text" th:text="${birthday}"></span>
+                <img src="/images/about/birthday.png" alt="birthday"><span class="about_text" th:text="${#temporals.format(birthday, 'd MMMM yyyy')}"></span>
             </div>
             <div class="city">
                 <img src="/images/about/city.png" alt="city"><span class="about_text" th:text="${city}"></span>
@@ -67,11 +68,29 @@
                 <img src="/images/about/email.png" alt="email"><span class="about_text" th:text="${email}"></span>
             </div>
         </div>
-        <div style="width: 200px; height: 200px; background-color: darkseagreen; float: right; margin-right: 200px">
-            USD:<span th:text="${USD} + ' руб'"></span>
-            EUR:<span th:text="${EUR} + ' руб'"></span>
+        <div class="whats_news">
+            <div class="top">
+                <img src="/images/navigation/whats_news.png" alt="Что нового?"><span>What's going on?</span>
+            </div>
+            <div class="text">
+                <textarea placeholder="Write something..."></textarea>
+            </div>
+            <div class="insert">
+                <input value="Post" type="submit">
+                <ul>
+                    <li><img src="/images/navigation/photo.png" alt="фото"></li>
+                    <li><img src="/images/navigation/film.png" alt="видео"></li>
+                    <li><img src="/images/navigation/audio.png" alt="аудио"></li>
+                </ul>
+            </div>
         </div>
+        <!--<div style="width: 200px; height: 200px; background-color: darkseagreen; float: right; margin-right: 200px">-->
+        <!--USD:<span th:text="${USD} + ' руб'"></span>-->
+        <!--EUR:<span th:text="${EUR} + ' руб'"></span>-->
+        <!--</div>-->
+
     </main>
+
     <footer></footer>
 
     <script src="/static/js/header.js" type="text/javascript"></script>

@@ -1,8 +1,6 @@
 package com.example.socialnetwork.config;
 
-import com.example.socialnetwork.components.DateFormatter;
 import org.springframework.beans.BeansException;
-import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
@@ -19,7 +17,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.extras.java8time.dialect.Java8TimeDialect;
 import org.thymeleaf.spring4.ISpringTemplateEngine;
 import org.thymeleaf.spring4.SpringTemplateEngine;
@@ -68,7 +65,6 @@ public class MvcConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     @Override
     public void addFormatters(final FormatterRegistry registry) {
         super.addFormatters(registry);
-        registry.addFormatter(dateFormatter());
     }
 
     @Bean
@@ -84,11 +80,6 @@ public class MvcConfig extends WebMvcConfigurerAdapter implements ApplicationCon
         return restTemplate;
     }
 
-    @Bean
-    public DateFormatter dateFormatter() {
-        return new DateFormatter();
-    }
-
     /* **************************************************************** */
     /*  THYMELEAF-SPECIFIC ARTIFACTS                                    */
     /*  TemplateResolver <- TemplateEngine <- ViewResolver              */
@@ -98,18 +89,25 @@ public class MvcConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     public ViewResolver viewResolver() {
         ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
         viewResolver.setTemplateEngine(templateEngine());
+        viewResolver.setTemplateEngine(templateEngineDate());
         viewResolver.setContentType("text/html");
         viewResolver.setOrder(1);
         viewResolver.setCharacterEncoding("UTF-8");
         return viewResolver;
     }
 
-    @Bean
-    public ISpringTemplateEngine templateEngine() {
+    private ISpringTemplateEngine templateEngine() {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver());
         templateEngine.setEnableSpringELCompiler(true);
         return templateEngine;
+    }
+
+    private ISpringTemplateEngine templateEngineDate() {
+        SpringTemplateEngine engine = new SpringTemplateEngine();
+        engine.addDialect(new Java8TimeDialect());
+        engine.setTemplateResolver(templateResolver());
+        return engine;
     }
 
     private ITemplateResolver templateResolver() {
@@ -120,12 +118,5 @@ public class MvcConfig extends WebMvcConfigurerAdapter implements ApplicationCon
         templateResolver.setCacheable(false);
         templateResolver.setTemplateMode(TemplateMode.HTML);
         return templateResolver;
-    }
-
-    private ISpringTemplateEngine templateEngine(ITemplateResolver templateResolver) {
-        SpringTemplateEngine engine = new SpringTemplateEngine();
-        engine.addDialect(new Java8TimeDialect());
-        engine.setTemplateResolver(templateResolver);
-        return engine;
     }
 }
