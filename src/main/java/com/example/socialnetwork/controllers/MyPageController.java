@@ -13,6 +13,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.websocket.server.PathParam;
+import java.nio.file.Path;
 import java.util.Map;
 
 @Slf4j
@@ -68,20 +70,15 @@ public class MyPageController {
     @GetMapping("/download_avatar_form")
     public String downloadAvatarForm(Model model) {
         log.info("downloadAvatarForm method called");
-
-        UserEntity currentUser = userService.getAnAuthorizedUser();
-        model.addAttribute("currentUser", currentUser);
-
         return "download_avatar_form";
     }
 
     @PostMapping("/download_avatar_form")
-    public String submitDownloadAvatarForm(@RequestParam("avatar") MultipartFile avatar,
-                                           @ModelAttribute UserEntity currentUser,
-                                           Model model) {
+    public String submitDownloadAvatarForm(@RequestParam("file") MultipartFile avatar, Model model) {
+        UserEntity currentUser = userService.getAnAuthorizedUser();
+        currentUser.setAvatar(fileService.uploadAvatar(avatar));
 
-        currentUser.setAvatar(avatar.getOriginalFilename());
-        userService.saveUser(currentUser);
+        userService.updateUser(currentUser);
 
         return "redirect:/my_page";
     }
@@ -92,7 +89,7 @@ public class MyPageController {
     }
 
     @PostMapping("/edit_page")
-    public String changeInfoBlockSubmit(Model model, BindingResult bindingResult) {
+    public String editInfoBlockSubmit(Model model, BindingResult bindingResult) {
         if(bindingResult.hasErrors()){
             return "edit_page";
         }

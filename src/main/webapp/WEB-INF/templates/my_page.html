@@ -17,7 +17,7 @@
                 <img src="/images/avatars/5NKnfW9NtE4.jpg" alt="Задний фон">
             </div>
             <div class="avatar_block">
-                <img src="/images/avatars/vovan.jpg" alt="Аватар">
+                <img th:src="@{'/images/avatars/' + ${avatar}}" alt="Аватар">
             </div>
             <div class="authorized_name">
                 <span th:text="${username}"></span>
@@ -34,8 +34,7 @@
         </div>
         <div class="edit_block">
             <div class="change_avatar">
-                <a th:href="@{/}"><img src="/images/navigation/ch_avatar.png" alt="ch_avatar" onmouseover="mouseOver()"
-                                       onmouseout="mouseOut()"><span class="block">Change avatar</span></a>
+                <a th:href="@{/my_page/download_avatar_form}"><img src="/images/navigation/ch_avatar.png" alt="ch_avatar"><span class="block">Change avatar</span></a>
             </div>
             <div class="edit">
                 <a th:href="@{/}"><img src="/images/navigation/edit.png" alt="edit"><span class="block">Edit Profile</span></a>

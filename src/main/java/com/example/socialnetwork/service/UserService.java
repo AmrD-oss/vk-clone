@@ -22,16 +22,20 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.EntityManager;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
 
 @Service
 public class UserService implements UserDetailsService {
 
     @Value("${application.cbr-daily-json}")
-    private String URL;
+    private String cbrUrlValute;
 
     private final RestTemplate restTemplate;
     private final EntityManager entityManager;
@@ -81,7 +85,7 @@ public class UserService implements UserDetailsService {
         return currentUser;
     }
 
-    public UserEntity findUserById(Long userId) {
+    public UserEntity findUserById(Long userId) throws NullPointerException {
         return userRepository.findById(userId).orElseThrow(
                 () -> new NullPointerException("Пользователя с id: " + userId + " не существует"));
     }
@@ -89,11 +93,6 @@ public class UserService implements UserDetailsService {
 
     public UserEntity findUserByUsername(String username) {
         return userRepository.findByUsername(username);
-    }
-
-
-    public List<UserEntity> findAllUsers() {
-        return userRepository.findAll();
     }
 
 
@@ -113,48 +112,24 @@ public class UserService implements UserDetailsService {
     }
 
     public void updateUser(UserEntity userEntity) {
-        UserEntity userEntityFromDB = userRepository.findByUsername(userEntity.getUsername());
+        UserEntity currentUser = getAnAuthorizedUser();
 
-        userEntityFromDB.setName(userEntity.getName());
-        userEntityFromDB.setSurname(userEntity.getSurname());
-        userEntityFromDB.setAvatar(userEntity.getAvatar());
-        userEntityFromDB.setStatus(userEntity.getStatus());
-        userEntityFromDB.setDateOfBirth(userEntity.getDateOfBirth());
-        userEntityFromDB.setCity(userEntity.getCity());
+        currentUser.setName(userEntity.getName());
+        currentUser.setSurname(userEntity.getSurname());
+        currentUser.setStatus(userEntity.getStatus());
+        currentUser.setDateOfBirth(userEntity.getDateOfBirth());
+        currentUser.setCity(userEntity.getCity());
 
-        saveUser(userEntityFromDB);
+        userRepository.save(currentUser);
     }
-
 
     public boolean deleteUser(Long userId) {
         if(userRepository.findById(userId).isPresent()) {
             userRepository.deleteById(userId);
             return true;
         }
-
         return false;
     }
-
-//    public List<Valute> getValute() {
-//
-//    }
-//
-//    private boolean checkValuteName(String name) {
-//        List<String> valutesName = Arrays.asList(
-//                "AUD","AZN","GBP","AMD", "BYN",
-//                "BGN","BRL","HUF", "HKD","DKK",
-//                "USD","EUR", "INR","KZT","CAD",
-//                "KGS", "CNY","MDL","NOK","PLN",
-//                "RON","XDR","SGD","TJS", "TRY",
-//                "TMT","UZS","UAH", "CZK","SEK",
-//                "CHF","ZAR","KRW","JPY");
-//
-//        for(String valute : valutesName) {
-//            return name.equals(valute);
-//        }
-//
-//        return false;
-//    }
 
     public Map<String, Valute> getAllValutes() {
         ExchangeRates exchangeRates = null;
@@ -175,7 +150,7 @@ public class UserService implements UserDetailsService {
         headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
         HttpEntity<String> entity = new HttpEntity<>(headers);
         ResponseEntity<String> response = restTemplate.exchange(
-                URL,
+                cbrUrlValute,
                 HttpMethod.GET,
                 entity,
                 String.class
