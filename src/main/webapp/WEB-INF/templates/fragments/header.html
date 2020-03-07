@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
@@ -29,9 +30,9 @@
                         <li><a th:href="@{/}"><img src="/images/navigation/video.png" alt="Фотографии" class="scale"></a></li>
                     </ul>
                 </div>
-                <div class="login">
+                <div class="login" sec:authentication="isAuthenticated()">
                     <a th:href="@{/my_page}"><div class="img_block"><img th:src="@{'/images/avatars/' + ${avatar}}" alt="Логин"></div></a>
-                    <span class="username" sec:authentication="principal.username"></span>
+                    <span class="username" th:text="${username}"></span>
                     <div class="arrow_down">
                         <img src="/images/navigation/arrow-down.png" alt="Стрелка вниз">
                     </div>

@@ -19,10 +19,10 @@
         </div>
 
         <div class="registration_form">
-            <form method="post" th:action="@{/registration}" th:object="${userEntity}">
+            <form method="post" th:action="@{/registration}" th:object="${newUser}">
                 <div class="username">
                     <label>username:<input class="username_inp" th:field="*{username}"/></label>
-                    <p th:each="error:${#fields.errors('username')}" th:text="${error}">Validation error</p>
+                    <p th:if="${#fields.hasErrors('username')}" th:errors="*{username}">Validation error</p>
                 </div>
                 <div class="password">
                     <label>password:<input class="password_inp" type="password" th:field="*{password}"/></label>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="birthday">
                     <label>date of birthday:<input class="birthday_inp" type="date" th:field="*{dateOfBirth}"/></label>
-                    <p th:each="error:${#fields.errors('dateOfBirth')}" th:text="${error}">Validation error</p>
+                    <p th:if="${#fields.hasErrors('dateOfBirth')}" th:errors="*{dateOfBirth}">Validation error</p>
                 </div>
                 <div class="city">
                     <label>city:<input class="city_inp" type="text" th:field="*{city}"/></label>

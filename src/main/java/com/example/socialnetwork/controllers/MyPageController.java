@@ -13,8 +13,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.websocket.server.PathParam;
-import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Map;
 
 @Slf4j
@@ -24,6 +23,9 @@ public class MyPageController {
 
     @Value("${application.avatar-folder}")
     private String avatarFolder;
+
+    @Value("${application.cover-folder}")
+    private String coverFolder;
 
     private UserService userService;
     private FileService fileService;
@@ -67,16 +69,25 @@ public class MyPageController {
         return "my_page";
     }
 
-    @GetMapping("/download_avatar_form")
-    public String downloadAvatarForm(Model model) {
-        log.info("downloadAvatarForm method called");
-        return "download_avatar_form";
+    @GetMapping("/upload_avatar_form")
+    public String getUploadAvatarForm(Model model) {
+        log.info("getUploadAvatarForm method called");
+        model.addAttribute("avatar", userService.getAnAuthorizedUser().getAvatar());
+
+        return "upload_avatar_form";
     }
 
-    @PostMapping("/download_avatar_form")
-    public String submitDownloadAvatarForm(@RequestParam("file") MultipartFile avatar, Model model) {
+    @PostMapping("/upload_avatar_form")
+    public String submitUploadAvatarForm(@RequestParam("file") MultipartFile avatar, Model model) {
+        log.info("submitUploadAvatarForm method called");
+
+//        if(bindingResult.hasErrors()){
+//            log.error("Some errors in submitUploadAvatarForm method", bindingResult.hasErrors());
+//            return "edit_page";
+//        }
+
         UserEntity currentUser = userService.getAnAuthorizedUser();
-        currentUser.setAvatar(fileService.uploadAvatar(avatar));
+        currentUser.setAvatar(fileService.uploadImage(avatar, Paths.get(coverFolder)));
 
         userService.updateUser(currentUser);
 
@@ -84,26 +95,27 @@ public class MyPageController {
     }
 
     @GetMapping("/edit_page")
-    public String editInfoBlock(Model model) {
+    public String editInfoForm(Model model) {
+        log.info("editInfoForm method called");
         return "edit_page";
     }
 
     @PostMapping("/edit_page")
-    public String editInfoBlockSubmit(Model model, BindingResult bindingResult) {
-        if(bindingResult.hasErrors()){
-            return "edit_page";
-        }
+    public String editInfoFormSubmit(Model model, UserEntity newUserEntity) {
+        log.info("editInfoFormSubmit method called");
 
-        UserEntity userEntity = userService.getAnAuthorizedUser();
-        userService.updateUser(userEntity);
-
-        model.addAttribute("updated_name", userEntity.getName());
-        model.addAttribute("updated_surname", userEntity.getSurname());
-        model.addAttribute("updated_status", userEntity.getStatus());
-        model.addAttribute("updated_birthday", userEntity.getDateOfBirth());
-        model.addAttribute("updated_city", userEntity.getCity());
+//        if(bindingResult.hasErrors()){
+//            log.error("Some errors in editInfoFormSubmit method", bindingResult.hasErrors());
+//            return "edit_page";
+//        }
+        userService.updateUser(newUserEntity);
 
         return "redirect:/my_page";
     }
 
+    @GetMapping("/upload_cover_form")
+    public String getUploadCoverForm(Model model) {
+        log.info("getUploadCoverForm method called");
+        return "upload_cover_form";
+    }
 }

@@ -35,10 +35,11 @@ public class NewsController {
     @GetMapping
     public String showNewsWall(Model model){
         log.info("showNewsWall method called");
-        List<News> newsList = newsService.getAllNews();
 
+        List<News> newsList = newsService.getAllNews();
         model.addAttribute("newsList", newsList);
-        
+        model.addAttribute("avatar", userService.getAnAuthorizedUser().getAvatar());
+
         return "news";
     }
 

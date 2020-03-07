@@ -13,26 +13,21 @@ import java.util.UUID;
 @Service
 public class FileService {
 
-    @Value("${application.avatar-folder}")
-    private String avatarFolder;
-
-    public String uploadAvatar(MultipartFile avatar) {
+    public String uploadImage(MultipartFile img, Path directory) {
         try {
-            checkExistenceDirectory(avatarFolder);
+            checkExistenceDirectory(directory.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        Path directory = Paths.get(avatarFolder);
-
         try {
-            byte[] avatarByteSize = avatar.getBytes();
+            byte[] imgSize = img.getBytes();
 
-            if(avatarByteSize.length != 0 && checkFileExtension(avatar)) {
-                Files.write(Paths.get(directory + File.separator + avatar.getOriginalFilename()), avatarByteSize);
+            if(imgSize.length != 0 && checkFileExtension(img)) {
+                Files.write(Paths.get(directory + File.separator + img.getOriginalFilename()), imgSize);
             }
 
-            return avatar.getOriginalFilename();
+            return img.getOriginalFilename();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -49,7 +44,6 @@ public class FileService {
     }
 
     private boolean checkFileExtension(MultipartFile file) {
-        String filename = file.getOriginalFilename();
-        return filename.endsWith(".jpg") || filename.endsWith(".png");
+        return file.getOriginalFilename().endsWith(".jpg") || file.getOriginalFilename().endsWith(".png");
     }
 }

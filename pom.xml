@@ -6,8 +6,9 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.8.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
+
     <groupId>com.example</groupId>
     <artifactId>social-network</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -36,15 +37,15 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-websocket</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web-services</artifactId>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-mail</artifactId>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-websocket</artifactId>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -61,12 +62,48 @@
                 <artifactId>spring-boot-starter-test</artifactId>
                 <scope>test</scope>
             </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-remote-shell</artifactId>
-            </dependency>
         <!--Spring Boot-->
 
+
+        <!--&lt;!&ndash;Websocket&ndash;&gt;-->
+            <!--<dependency>-->
+                <!--<groupId>org.springframework</groupId>-->
+                <!--<artifactId>spring-websocket</artifactId>-->
+                <!--<version>4.2.4.RELEASE</version>-->
+            <!--</dependency>-->
+            <!--<dependency>-->
+                <!--<groupId>org.springframework</groupId>-->
+                <!--<artifactId>spring-messaging</artifactId>-->
+                <!--<version>4.2.4.RELEASE</version>-->
+            <!--</dependency>-->
+        <!--&lt;!&ndash;Websocket&ndash;&gt;-->
+
+        <!--SockJS-->
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>sockjs-client</artifactId>
+                <version>1.1.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>stomp-websocket</artifactId>
+                <version>2.3.3</version>
+            </dependency>
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>webjars-locator-core</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>bootstrap</artifactId>
+                <version>3.3.7</version>
+            </dependency>
+            <dependency>
+                <groupId>org.webjars</groupId>
+                <artifactId>jquery</artifactId>
+                <version>3.1.1-1</version>
+            </dependency>
+        <!--SockJS-->
 
         <dependency>
             <groupId>org.springframework</groupId>
@@ -140,17 +177,6 @@
             </dependency>
         <!--Validation-->
 
-        <dependency>
-            <groupId>javax.el</groupId>
-            <artifactId>javax.el-api</artifactId>
-            <version>3.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish.web</groupId>
-            <artifactId>javax.el</artifactId>
-            <version>2.2.6</version>
-        </dependency>
-
         <!--Jackson-->
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
@@ -174,21 +200,20 @@
             <dependency>
                 <groupId>org.thymeleaf</groupId>
                 <artifactId>thymeleaf</artifactId>
-                <version>3.0.11.RELEASE</version>
+                <version>3.0.10.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>org.thymeleaf</groupId>
-                <artifactId>thymeleaf-spring4</artifactId>
-                <version>3.0.11.RELEASE</version>
+                <artifactId>thymeleaf-spring5</artifactId>
+                <version>3.0.10.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>org.thymeleaf.extras</groupId>
                 <artifactId>thymeleaf-extras-java8time</artifactId>
-                <version>3.0.1.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>org.thymeleaf.extras</groupId>
-                <artifactId>thymeleaf-extras-springsecurity4</artifactId>
+                <artifactId>thymeleaf-extras-springsecurity5</artifactId>
                 <version>3.0.4.RELEASE</version>
             </dependency>
         <!--Thymeleaf-->

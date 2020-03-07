@@ -16,6 +16,10 @@ div {
     font-size: 16px;
 }
 
+/*main {*/
+    /*display: flex;*/
+/*}*/
+
 .top_block {
     width: 950px;
     height: 400px;
@@ -221,5 +225,86 @@ div {
     height: 15px;
     padding: 10px;
     float: left;
+}
+
+.whats_news {
+    width: 521px;
+    height: 170px;
+    background-color: white;
+    border: 0.5px solid grey;
+    border-radius: 3px;
+    float: left;
+    position: relative;
+    left: 30px;
+    bottom: 102px;
+    box-shadow: 0 0 1px 0;
+}
+
+.whats_news .top {
+    width: 500px;
+    height: 20px;
+    padding: 10px;
+    border-bottom: 0.5px solid dimgray;
+}
+
+.whats_news .top img {
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+.whats_news .top span {
+    margin-left: 10px;
+    font-size: 14px;
+    color: dimgray;
+}
+
+.whats_news .text {
+    width: 500px;
+    height: 80px;
+}
+
+.whats_news .text textarea {
+    width: 499px;
+    height: 59px;
+    padding: 10px;
+    resize: none;
+}
+
+.whats_news .insert {
+    width: 520px;
+    height: 50px;
+}
+
+.whats_news .insert ul {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.whats_news .insert li {
+    display: inline-block;
+    width: 30px;
+    height: 50px;
+    text-align: center;
+}
+
+.whats_news .insert ul li img {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+}
+
+.whats_news input {
+    display: block;
+    width: 70px;
+    height: 30px;
+    float: right;
+    margin-top: 12px;
+    margin-right: 10px;
+    background-color: #302f2f;
+    color: white;
+    border-radius: 3px;
+    outline: none;
+    border: none;
 }
 

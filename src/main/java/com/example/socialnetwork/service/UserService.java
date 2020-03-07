@@ -116,6 +116,7 @@ public class UserService implements UserDetailsService {
 
         currentUser.setName(userEntity.getName());
         currentUser.setSurname(userEntity.getSurname());
+        currentUser.setEmail(userEntity.getEmail());
         currentUser.setStatus(userEntity.getStatus());
         currentUser.setDateOfBirth(userEntity.getDateOfBirth());
         currentUser.setCity(userEntity.getCity());

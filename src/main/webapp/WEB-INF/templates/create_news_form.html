@@ -7,13 +7,11 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" th:href="@{/static/css/create_news_form.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/static/css/header.css}">
-    <link rel="stylesheet" type="text/css" th:href="@{/static/css/nav_panel.css}">
     <title>Title</title>
 </head>
 <body>
 
     <div th:replace="fragments/header :: header"></div>
-    <div th:replace="fragments/nav_panel :: navigation_panel"></div>
 
     <div class="create_news_form">
         <form method="post" class="news_form" th:action="@{/news/create_news_form}" th:object="${news}">
