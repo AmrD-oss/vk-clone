@@ -18,8 +18,8 @@ import java.util.Set;
 @Table(name = "user_entity", schema = "public")
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString(of = {"id","username", "password", "email"})
-@EqualsAndHashCode(of = {"id","username", "password", "email"})
+@ToString(of = {"id","username", "password", "email", "name", "surname", "online", "status", "city"})
+@EqualsAndHashCode(of = {"id","username", "password", "email", "name", "surname", "online", "status", "city"})
 public class UserEntity implements UserDetails {
 
     @Id
@@ -45,7 +45,7 @@ public class UserEntity implements UserDetails {
     private String name;
 
     @NotNull(message = "Surname cannot be null")
-    @Size(min = 3, message = "Surname must be between 3 and 30 characters")
+    @Size(min = 3, max = 30, message = "Surname must be between 3 and 30 characters")
     private String surname;
 
     private String avatar;

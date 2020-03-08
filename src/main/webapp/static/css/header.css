@@ -76,7 +76,6 @@ li {
     background-color: #4f4d4d;
 }
 
-
 .header_block .login .img_block {
     width: 35px;
     height: 35px;
@@ -135,7 +134,7 @@ li {
 }
 
 .header_block .nav_panel li:hover {
-    background-color: darkslateblue;
+    background-color: purple;
     transform: scale(1.3);
 }
 

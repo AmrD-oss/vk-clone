@@ -7,13 +7,16 @@ import com.example.socialnetwork.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.validation.Valid;
 import java.nio.file.Paths;
+import java.time.LocalDate;
 import java.util.Map;
 
 @Slf4j
@@ -72,8 +75,6 @@ public class MyPageController {
     @GetMapping("/upload_avatar_form")
     public String getUploadAvatarForm(Model model) {
         log.info("getUploadAvatarForm method called");
-        model.addAttribute("avatar", userService.getAnAuthorizedUser().getAvatar());
-
         return "upload_avatar_form";
     }
 
@@ -81,16 +82,10 @@ public class MyPageController {
     public String submitUploadAvatarForm(@RequestParam("file") MultipartFile avatar, Model model) {
         log.info("submitUploadAvatarForm method called");
 
-//        if(bindingResult.hasErrors()){
-//            log.error("Some errors in submitUploadAvatarForm method", bindingResult.hasErrors());
-//            return "edit_page";
-//        }
+        fileService.uploadImage(avatar, Paths.get(coverFolder));
+        userService.updateAvatarOfCurrentUser(avatar.getOriginalFilename());
 
-        UserEntity currentUser = userService.getAnAuthorizedUser();
-        currentUser.setAvatar(fileService.uploadImage(avatar, Paths.get(coverFolder)));
-
-        userService.updateUser(currentUser);
-
+        log.info("Avatar: " + avatar.getOriginalFilename() + " uploaded successfully");
         return "redirect:/my_page";
     }
 
@@ -101,15 +96,13 @@ public class MyPageController {
     }
 
     @PostMapping("/edit_page")
-    public String editInfoFormSubmit(Model model, UserEntity newUserEntity) {
+    public String editInfoFormSubmit(@RequestParam("name") String name, @RequestParam("surname") String surname,
+                                     @RequestParam("email") String email, @RequestParam("status") String status,
+                                     @RequestParam("birthday")@DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate birthday,
+                                     @RequestParam("city") String city) {
         log.info("editInfoFormSubmit method called");
 
-//        if(bindingResult.hasErrors()){
-//            log.error("Some errors in editInfoFormSubmit method", bindingResult.hasErrors());
-//            return "edit_page";
-//        }
-        userService.updateUser(newUserEntity);
-
+        userService.updateUser(name,surname,email,status,birthday,city);
         return "redirect:/my_page";
     }
 

@@ -10,6 +10,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.*;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
@@ -29,6 +30,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.LocalDate;
 import java.util.*;
 
 @Service
@@ -111,15 +113,24 @@ public class UserService implements UserDetailsService {
         return true;
     }
 
-    public void updateUser(UserEntity userEntity) {
+    public void updateUser(String name, String surname,
+                           String email, String status,
+                           @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate birthday,
+                           String city) {
         UserEntity currentUser = getAnAuthorizedUser();
+        currentUser.setName(name);
+        currentUser.setSurname(surname);
+        currentUser.setEmail(email);
+        currentUser.setStatus(status);
+        currentUser.setDateOfBirth(birthday);
+        currentUser.setCity(city);
 
-        currentUser.setName(userEntity.getName());
-        currentUser.setSurname(userEntity.getSurname());
-        currentUser.setEmail(userEntity.getEmail());
-        currentUser.setStatus(userEntity.getStatus());
-        currentUser.setDateOfBirth(userEntity.getDateOfBirth());
-        currentUser.setCity(userEntity.getCity());
+        userRepository.save(currentUser);
+    }
+
+    public void updateAvatarOfCurrentUser(String avatarName) {
+        UserEntity currentUser = getAnAuthorizedUser();
+        currentUser.setAvatar(avatarName);
 
         userRepository.save(currentUser);
     }

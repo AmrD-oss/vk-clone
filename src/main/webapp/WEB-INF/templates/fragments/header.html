@@ -31,7 +31,7 @@
                     </ul>
                 </div>
                 <div class="login" sec:authentication="isAuthenticated()">
-                    <a th:href="@{/my_page}"><div class="img_block"><img th:src="@{'/images/avatars/' + ${avatar}}" alt="Логин"></div></a>
+                    <a th:href="@{/my_page}"><div class="img_block"><img th:src="@{'/images/avatars/' + ${avatar}}" alt="ава"></div></a>
                     <span class="username" th:text="${username}"></span>
                     <div class="arrow_down">
                         <img src="/images/navigation/arrow-down.png" alt="Стрелка вниз">
