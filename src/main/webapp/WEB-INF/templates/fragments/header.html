@@ -13,28 +13,28 @@
         <div th:fragment="header" class="header_block">
             <div class="navigation">
                 <div class="logo">
-                    <a th:href="@{/news}"><img src="/images/navigation/logo.png" alt="Логотип"></a>
+                    <a th:href="@{/news}"><img src="/images/my_page/logo.png" alt="Логотип"></a>
                 </div>
                 <div class="search">
                     <input type="text" name="search" placeholder="Search...">
                 </div>
                 <div class="nav_panel">
                     <ul>
-                        <li><a th:href="@{/my_page}"><img src="/images/navigation/home.png" alt="Моя страница" class="scale"></a></li>
-                        <li><a th:href="@{/news}"><img src="/images/navigation/news.png" alt="Новости" class="scale"></a></li>
-                        <li><a th:href="@{/}"><img src="/images/navigation/messages.png" alt="Сообщения" class="scale"></a></li>
-                        <li><a th:href="@{/}"><img src="/images/navigation/friends.png" alt="Друзья" class="scale"></a></li>
-                        <li><a th:href="@{/}"><img src="/images/navigation/groups.png" alt="Группы" class="scale"></a></li>
-                        <li><a th:href="@{/}"><img src="/images/navigation/photos.png" alt="Фотографии" class="scale"></a></li>
-                        <li><a th:href="@{/}"><img src="/images/navigation/music.png" alt="Музыка" class="scale"></a></li>
-                        <li><a th:href="@{/}"><img src="/images/navigation/video.png" alt="Фотографии" class="scale"></a></li>
+                        <li><a th:href="@{/my_page}"><img src="/images/my_page/home.png" alt="Моя страница" class="scale"></a></li>
+                        <li><a th:href="@{/news}"><img src="/images/my_page/news.png" alt="Новости" class="scale"></a></li>
+                        <li><a th:href="@{/}"><img src="/images/my_page/messages.png" alt="Сообщения" class="scale"></a></li>
+                        <li><a th:href="@{/}"><img src="/images/my_page/friends.png" alt="Друзья" class="scale"></a></li>
+                        <li><a th:href="@{/}"><img src="/images/my_page/groups.png" alt="Группы" class="scale"></a></li>
+                        <li><a th:href="@{/}"><img src="/images/my_page/photos.png" alt="Фотографии" class="scale"></a></li>
+                        <li><a th:href="@{/}"><img src="/images/my_page/music.png" alt="Музыка" class="scale"></a></li>
+                        <li><a th:href="@{/}"><img src="/images/my_page/video.png" alt="Фотографии" class="scale"></a></li>
                     </ul>
                 </div>
                 <div class="login" sec:authentication="isAuthenticated()">
                     <a th:href="@{/my_page}"><div class="img_block"><img th:src="@{'/images/avatars/' + ${avatar}}" alt="ава"></div></a>
                     <span class="username" th:text="${username}"></span>
                     <div class="arrow_down">
-                        <img src="/images/navigation/arrow-down.png" alt="Стрелка вниз">
+                        <img src="/images/my_page/arrow-down.png" alt="Стрелка вниз">
                     </div>
                 </div>
             </div>

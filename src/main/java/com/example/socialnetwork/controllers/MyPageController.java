@@ -10,11 +10,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.validation.Valid;
 import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.Map;
@@ -79,10 +77,10 @@ public class MyPageController {
     }
 
     @PostMapping("/upload_avatar_form")
-    public String submitUploadAvatarForm(@RequestParam("file") MultipartFile avatar, Model model) {
+    public String submitUploadAvatarForm(@RequestParam MultipartFile avatar, Model model) {
         log.info("submitUploadAvatarForm method called");
 
-        fileService.uploadImage(avatar, Paths.get(coverFolder));
+        fileService.uploadImage(avatar, Paths.get(avatarFolder));
         userService.updateAvatarOfCurrentUser(avatar.getOriginalFilename());
 
         log.info("Avatar: " + avatar.getOriginalFilename() + " uploaded successfully");
@@ -96,13 +94,13 @@ public class MyPageController {
     }
 
     @PostMapping("/edit_page")
-    public String editInfoFormSubmit(@RequestParam("name") String name, @RequestParam("surname") String surname,
-                                     @RequestParam("email") String email, @RequestParam("status") String status,
-                                     @RequestParam("birthday")@DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate birthday,
-                                     @RequestParam("city") String city) {
+    public String editInfoFormSubmit(@RequestParam String name, @RequestParam String surname,
+                                     @RequestParam String email, @RequestParam String status,
+                                     @RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate birthday,
+                                     @RequestParam String city) {
         log.info("editInfoFormSubmit method called");
-
         userService.updateUser(name,surname,email,status,birthday,city);
+        log.info("Сurrent user updated page data: " + userService.getAnAuthorizedUser().toString());
         return "redirect:/my_page";
     }
 

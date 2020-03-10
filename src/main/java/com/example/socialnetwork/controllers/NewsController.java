@@ -15,6 +15,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.List;
 
 
@@ -36,47 +37,53 @@ public class NewsController {
     public String showNewsWall(Model model){
         log.info("showNewsWall method called");
 
-        List<News> newsList = newsService.getAllNews();
-        model.addAttribute("newsList", newsList);
-        model.addAttribute("avatar", userService.getAnAuthorizedUser().getAvatar());
+        List<News> newsList = null;
+        try {
+            newsList = newsService.parseAllNews();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        UserEntity currentUser = userService.getAnAuthorizedUser();
 
+        model.addAttribute("newsList", newsList);
         return "news";
     }
 
 
-    @GetMapping("/create_news_form")
-    public String createNewsForm(Model model) {
-        log.info("createNews method called");
+//    @GetMapping("/create_news_form")
+//    public String createNewsForm(Model model) {
+//        log.info("createNews method called");
+//
+//        UserEntity currentUser = userService.getAnAuthorizedUser();
+//
+//        model.addAttribute("author_name", currentUser.getName());
+//        model.addAttribute("author_surname", currentUser.getSurname());
+//        model.addAttribute("news", new News());
+//
+//        return "create_news_form";
+//    }
 
-        UserEntity currentUser = userService.getAnAuthorizedUser();
-
-        model.addAttribute("author_name", currentUser.getName());
-        model.addAttribute("author_surname", currentUser.getSurname());
-        model.addAttribute("news", new News());
-
-        return "create_news_form";
-    }
-
-    @PostMapping("/create_news_form")
-    public String submitNews(@ModelAttribute News news, BindingResult result, Model model) {
-        log.info("submitNews method called");
-
-        if(result.hasErrors()){
-            return "create_news_form";
-        }
-
-        UserEntity currentUser = userService.getAnAuthorizedUser();
-
-        news.setUserEntity(currentUser);
-        newsService.saveNews(news);
-
-        return "redirect:/news";
-    }
-
-    @DeleteMapping("/news/{id}")
-    @ResponseStatus(HttpStatus.ACCEPTED)
-    public void deleteNews(@PathVariable Long id) {
-        log.info("deleteNews method called");
-        newsService.deleteNews(id);
-    }
+//    @PostMapping("/create_news_form")
+//    public String submitNews(@ModelAttribute News news, BindingResult result, Model model) {
+//        log.info("submitNews method called");
+//
+//        if(result.hasErrors()){
+//            log.error("Validation error in submitNews method: " + result.hasErrors());
+//            return "create_news_form";
+//        }
+//
+//        UserEntity currentUser = userService.getAnAuthorizedUser();
+//
+////        news.setUserEntity(currentUser);
+//        newsService.saveNews(news);
+//
+//        log.info("News created: " + news.toString());
+//        return "redirect:/news";
+//    }
+//
+//    @DeleteMapping("/news/{id}")
+//    public void deleteNews(@PathVariable Long id) {
+//        log.info("deleteNews method called");
+//        newsService.deleteNews(id);
+//    }
 }

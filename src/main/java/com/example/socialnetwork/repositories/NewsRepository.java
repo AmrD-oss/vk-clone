@@ -6,9 +6,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
-public interface NewsRepository extends JpaRepository<News, Long> {
-    List<News> findAll();
-//    News findByTitleAndAuthor_Name(String title, String authorName);
-    void deleteById(Long id);
-}
+//@Repository
+//public interface NewsRepository extends JpaRepository<News, Long> {
+//    List<News> findAll();
+////    News findByTitleAndAuthor_Name(String title, String authorName);
+//    void deleteById(Long id);
+//}

@@ -11,36 +11,26 @@ import java.time.LocalDateTime;
 import java.util.Date;
 
 @Data
-@Entity
-@Table(name = "news")
-@ToString(of = {"id","title","description","dateOfCreation","userEntity"})
-@EqualsAndHashCode(of = {"id","title","description","dateOfCreation","userEntity"})
+@ToString(of = {"title", "date", "img", "link"})
+@EqualsAndHashCode(of = {"title", "date", "img", "link"})
 @NoArgsConstructor
-@AllArgsConstructor
 public class News {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column(nullable = false)
-    @Size(min = 3, max = 100)
     private String title;
+    private String date;
+    private String img;
+    private String link;
 
-    @Column(nullable = false)
-    @NotNull(message = "Добавьте текст!")
-    private String description;
-
-    @Column
-    private Date dateOfCreation = new Date();
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "author_id")
-    private UserEntity userEntity;
-
-    public News(String title, String description, UserEntity userEntity) {
+    public News(String title, String date, String link) {
         this.title = title;
-        this.description = description;
-        this.userEntity = userEntity;
+        this.date = date;
+        this.link = link;
+    }
+
+    public News(String title, String date, String img, String link) {
+        this.title = title;
+        this.date = date;
+        this.img = img;
+        this.link = link;
     }
 }

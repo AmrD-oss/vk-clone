@@ -7,20 +7,26 @@
     <meta charset="UTF-8" content="text/html">
     <title>News</title>
     <link rel="stylesheet" type="text/css" th:href="@{/static/css/header.css}">
-    <link rel="stylesheet" type="text/css" th:href="@{/static/css/nav_panel.css}">
-    <link rel="stylesheet" type="text/css" th:href="@{/static/css/news_wall.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/news.css}">
 </head>
 <body>
     <div th:replace="fragments/header :: header"></div>
-    <!--<div th:replace="fragments/nav_panel :: navigation_panel"></div>-->
-
     <main>
+        <div class="title"><span>Лента новостей</span></div>
         <div class="news_wall">
             <div class="news" th:each="news : ${newsList}">
-                <div class="title"><h4 th:text="${news.title}"></h4></div>
-                <div class="description"><div th:text="${news.description}"></div></div>
-                <div class="date_of_creation"><p th:text="${#dates.format(news.dateOfCreation, 'dd MMMM HH:mm')}"></p></div>
-                <!--<div class="author">Author Id: <a href="#" th:text="${author_id}"></a></div>-->
+                <h4 th:text="${news.title}"></h4>
+                <img th:src="${news.img}" alt="изображение">
+                <div class="date">
+                    <img src="/images/news/clock.png" alt="время">
+                    <span class="colon">:</span>
+                    <span class="time" th:text="${news.date}"></span></div>
+                <div class="link">
+                    <img src="/images/news/link.png" alt="ссылка">
+                    <span class="colon link-colon">:</span>
+                    <a th:href="${news.link}" th:text="${news.link}"></a>
+                </div>
+
             </div>
         </div>
     </main>

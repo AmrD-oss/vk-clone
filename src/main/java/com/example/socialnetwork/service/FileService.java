@@ -44,6 +44,8 @@ public class FileService {
     }
 
     private boolean checkFileExtension(MultipartFile file) {
-        return file.getOriginalFilename().endsWith(".jpg") || file.getOriginalFilename().endsWith(".png");
+        return file.getOriginalFilename().endsWith(".jpg")
+                || file.getOriginalFilename().endsWith(".png")
+                || file.getOriginalFilename().endsWith(".gif");
     }
 }
