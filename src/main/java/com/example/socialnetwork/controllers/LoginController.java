@@ -1,6 +1,7 @@
 package com.example.socialnetwork.controllers;
 
 
+import com.example.socialnetwork.service.FileService;
 import com.example.socialnetwork.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,6 +21,7 @@ public class LoginController {
 
     @GetMapping("/login")
     public String loginPage(Model model) {
+        model.addAttribute("avatar", "default_avatar.png");
         return "login";
     }
 

@@ -23,13 +23,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.EntityManager;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.*;
 
@@ -51,6 +47,7 @@ public class UserService implements UserDetailsService {
                        UserRepository userRepository,
                        RoleRepository roleRepository,
                        BCryptPasswordEncoder passwordEncoder) {
+
         this.restTemplate = restTemplateBuilder.build();
         this.entityManager = entityManager;
         this.userRepository = userRepository;
@@ -87,16 +84,18 @@ public class UserService implements UserDetailsService {
         return currentUser;
     }
 
+    public List<UserEntity> getAllUsers() {
+        return userRepository.findAll();
+    }
+
     public UserEntity findUserById(Long userId) throws NullPointerException {
         return userRepository.findById(userId).orElseThrow(
                 () -> new NullPointerException("Пользователя с id: " + userId + " не существует"));
     }
 
-
     public UserEntity findUserByUsername(String username) {
         return userRepository.findByUsername(username);
     }
-
 
     public boolean saveUser(UserEntity userEntity) {
         UserEntity userEntityFromDB = userRepository.findByUsername(userEntity.getUsername());
@@ -131,6 +130,13 @@ public class UserService implements UserDetailsService {
     public void updateAvatarOfCurrentUser(String avatarName) {
         UserEntity currentUser = getAnAuthorizedUser();
         currentUser.setAvatar(avatarName);
+
+        userRepository.save(currentUser);
+    }
+
+    public void updateCoverOfCurrentUser(String coverName) {
+        UserEntity currentUser = getAnAuthorizedUser();
+        currentUser.setCover(coverName);
 
         userRepository.save(currentUser);
     }

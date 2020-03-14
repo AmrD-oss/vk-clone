@@ -46,44 +46,9 @@ public class NewsController {
         UserEntity currentUser = userService.getAnAuthorizedUser();
 
         model.addAttribute("newsList", newsList);
+        model.addAttribute("avatar", currentUser.getAvatar());
+        model.addAttribute("username", currentUser.getUsername());
+
         return "news";
     }
-
-
-//    @GetMapping("/create_news_form")
-//    public String createNewsForm(Model model) {
-//        log.info("createNews method called");
-//
-//        UserEntity currentUser = userService.getAnAuthorizedUser();
-//
-//        model.addAttribute("author_name", currentUser.getName());
-//        model.addAttribute("author_surname", currentUser.getSurname());
-//        model.addAttribute("news", new News());
-//
-//        return "create_news_form";
-//    }
-
-//    @PostMapping("/create_news_form")
-//    public String submitNews(@ModelAttribute News news, BindingResult result, Model model) {
-//        log.info("submitNews method called");
-//
-//        if(result.hasErrors()){
-//            log.error("Validation error in submitNews method: " + result.hasErrors());
-//            return "create_news_form";
-//        }
-//
-//        UserEntity currentUser = userService.getAnAuthorizedUser();
-//
-////        news.setUserEntity(currentUser);
-//        newsService.saveNews(news);
-//
-//        log.info("News created: " + news.toString());
-//        return "redirect:/news";
-//    }
-//
-//    @DeleteMapping("/news/{id}")
-//    public void deleteNews(@PathVariable Long id) {
-//        log.info("deleteNews method called");
-//        newsService.deleteNews(id);
-//    }
 }

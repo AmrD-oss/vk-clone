@@ -159,7 +159,12 @@
         <!--Security-->
 
 
-        <!--Validation-->
+        <!--Hibernate-->
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>5.4.10.Final</version>
+            </dependency>
             <dependency>
                 <groupId>javax.validation</groupId>
                 <artifactId>validation-api</artifactId>
@@ -174,6 +179,11 @@
                 <groupId>org.hibernate.validator</groupId>
                 <artifactId>hibernate-validator-annotation-processor</artifactId>
                 <version>6.0.2.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-entitymanager</artifactId>
+                <version>5.4.10.Final</version>
             </dependency>
         <!--Validation-->
 
@@ -194,7 +204,6 @@
                 <version>2.10.2</version>
             </dependency>
         <!--Jackson-->
-
 
         <!--Thymeleaf-->
             <dependency>

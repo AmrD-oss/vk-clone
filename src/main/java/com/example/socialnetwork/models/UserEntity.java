@@ -18,8 +18,8 @@ import java.util.Set;
 @Table(name = "user_entity", schema = "public")
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString(of = {"id","username", "password", "email", "name", "surname", "online", "status", "city"})
-@EqualsAndHashCode(of = {"id","username", "password", "email", "name", "surname", "online", "status", "city"})
+@ToString(of = {"id","username", "password", "email", "name", "surname", "online", "city"})
+@EqualsAndHashCode(of = {"id","username", "password", "email", "name", "surname", "online", "city"})
 public class UserEntity implements UserDetails {
 
     @Id
@@ -49,6 +49,7 @@ public class UserEntity implements UserDetails {
     private String surname;
 
     private String avatar;
+    private String cover;
     private Boolean online = false;
     private String status;
 
@@ -56,8 +57,8 @@ public class UserEntity implements UserDetails {
     private LocalDate dateOfBirth;
     private String city;
 
-//    @OneToMany(mappedBy = "userEntity", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-//    private List<News> news;
+    @OneToMany(mappedBy = "user")
+    private List<Note> notes;
 
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "user_roles",

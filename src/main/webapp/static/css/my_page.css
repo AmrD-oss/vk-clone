@@ -177,13 +177,31 @@ div {
     margin-top: 10px;
 }
 
-.edit_block .somebody {
+.edit_block .delete_avatar  {
+    width: 195px;
+    height: 30px;
     float: right;
+    margin-top: 10px;
+}
+
+.edit_block .delete_avatar form button {
     width: 195px;
     height: 30px;
     background-color: white;
+    border: 0.5px solid grey;
+    border-radius: 3px;
     text-align: center;
-    margin-top: 10px;
+    padding-right: 15px;
+}
+
+.edit_block .delete_avatar form button img {
+    width: 30px;
+    height: 30px;
+    float: left;
+    display: block;
+    position: relative;
+    left: 32px;
+    top: -7px;
 }
 
 .about_block {

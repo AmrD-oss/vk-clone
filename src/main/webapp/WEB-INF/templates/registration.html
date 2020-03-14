@@ -44,10 +44,10 @@
                     <label>surname:<input class="surname_inp" type="text" th:field="*{surname}"/></label>
                     <p th:each="error:${#fields.errors('surname')}" th:text="${error}">Validation error</p>
                 </div>
-                <div class="avatar">
-                    <label>avatar:<input class="avatar_inp" type="file" th:field="*{avatar}"/></label>
-                    <p th:each="error:${#fields.errors('avatar')}" th:text="${error}">Validation error</p>
-                </div>
+                <!--<div class="avatar">-->
+                    <!--<label>avatar:<input class="avatar_inp" type="file" th:field="*{avatar}"/></label>-->
+                    <!--<p th:each="error:${#fields.errors('avatar')}" th:text="${error}">Validation error</p>-->
+                <!--</div>-->
                 <div class="status">
                     <label>status:<input class="status_inp" type="text" th:field="*{status}"/></label>
                     <p th:each="error:${#fields.errors('status')}" th:text="${error}">Validation error</p>

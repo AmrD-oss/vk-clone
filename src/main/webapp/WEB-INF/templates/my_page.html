@@ -7,23 +7,14 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" th:href="@{/static/css/header.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/static/css/my_page.css}">
-    <title th:text="${name}"></title>
-
-    <script>
-
-        function change_bg_img() {
-            let bg = document.getElementsByClassName('background_img');
-            // bg.src =
-        }
-
-    </script>
+    <title th:text="${id} + '/' + ${username}"></title>
 </head>
 <body>
-    <div th:replace="fragments/header :: header"></div>
+    <header th:replace="fragments/header :: header"></header>
     <main>
         <div class="top_block">
             <div class="background_img">
-                <img src="/images/covers/forest.gif" alt="Задний фон">
+                <img th:src="@{'/images/covers/' + ${cover}}" alt="Задний фон">
             </div>
             <div class="avatar_block">
                 <img th:src="@{'/images/avatars/' + ${avatar}}" alt="Аватар">
@@ -52,16 +43,18 @@
                 <a th:href="@{/my_page/edit_page}"><img src="/images/my_page/edit.png" alt="edit"><span class="block">Edit Profile</span></a>
             </div>
             <div class="change_cover">
-                <a onclick="changeBgImg()" th:href="@{/}">
+                <a th:href="@{/my_page/upload_cover_form}">
                     <img src="/images/my_page/cover.png" alt="cover">
                     <span class="block">Change cover</span>
                 </a>
             </div>
-            <div class="somebody">
-                <a th:href="@{/}">
-                    <img src="/images/my_page/music.png" alt="somebody">
-                    <span class="block">Somebody</span>
-                </a>
+            <div class="delete_avatar">
+                <form method="post" th:action="@{/my_page/delete_avatar}">
+                    <button type="submit">
+                        <img src="/images/my_page/delete_avatar.png" alt="delete_avatar">
+                        <span class="block">Delete avatar</span>
+                    </button>
+                </form>
             </div>
         </div>
         <div class="about_block">
@@ -84,7 +77,7 @@
                 <img src="/images/about/email.png" alt="email"><span class="about_text" th:text="${email}"></span>
             </div>
         </div>
-        <div class="whats_news">
+        <form class="whats_news">
             <div class="top">
                 <img src="/images/my_page/whats_news.png" alt="Что нового?"><span>What's going on?</span>
             </div>
@@ -94,16 +87,16 @@
             <div class="insert">
                 <input value="Post" type="submit">
                 <ul>
-                    <li><img src="/images/navigation/photo.png" alt="фото"></li>
-                    <li><img src="/images/navigation/film.png" alt="видео"></li>
-                    <li><img src="/images/navigation/audio.png" alt="аудио"></li>
+                    <li><img src="/images/my_page/photo.png" alt="фото"></li>
+                    <li><img src="/images/my_page/film.png" alt="видео"></li>
+                    <li><img src="/images/my_page/audio.png" alt="аудио"></li>
                 </ul>
             </div>
-        </div>
-        <div style="width: 200px; height: 200px; background-color: darkseagreen; float: right; margin-right: 200px">
-            USD:<span th:text="${USD} + ' руб'"></span>
-            EUR:<span th:text="${EUR} + ' руб'"></span>
-        </div>
+        </form>
+        <!--<div style="width: 200px; height: 200px; background-color: darkseagreen; float: right; margin-right: 200px">-->
+            <!--USD:<span th:text="${USD} + ' руб'"></span>-->
+            <!--EUR:<span th:text="${EUR} + ' руб'"></span>-->
+        <!--</div>-->
 
     </main>
 

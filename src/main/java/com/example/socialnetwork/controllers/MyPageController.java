@@ -1,7 +1,6 @@
 package com.example.socialnetwork.controllers;
 
 import com.example.socialnetwork.models.UserEntity;
-import com.example.socialnetwork.models.Valute;
 import com.example.socialnetwork.service.FileService;
 import com.example.socialnetwork.service.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -15,7 +14,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.nio.file.Paths;
 import java.time.LocalDate;
-import java.util.Map;
 
 @Slf4j
 @Controller
@@ -41,26 +39,32 @@ public class MyPageController {
     public String showMyPage(Model model) {
         log.info("showMyPage method called");
 
-        Map<String, Valute> valutes = userService.getAllValutes();
-        for(Map.Entry<String, Valute> valute : valutes.entrySet()) {
-            String name = valute.getKey();
-
-            if(name.equals("USD")) {
-                model.addAttribute("USD", Math.round(valute.getValue().getValue()));
-            }
-
-            if(name.equals("EUR")) {
-                model.addAttribute("EUR", Math.round(valute.getValue().getValue()));
-            }
-        }
+//        Map<String, Valute> valutes = userService.getAllValutes();
+//        for(Map.Entry<String, Valute> valute : valutes.entrySet()) {
+//            String name = valute.getKey();
+//
+//            if(name.equals("USD")) {
+//                model.addAttribute("USD", Math.round(valute.getValue().getValue()));
+//            }
+//
+//            if(name.equals("EUR")) {
+//                model.addAttribute("EUR", Math.round(valute.getValue().getValue()));
+//            }
+//        }
 
         UserEntity currentUser = userService.getAnAuthorizedUser();
-        currentUser.setOnline(true);
 
+        model.addAttribute("id", currentUser.getId());
         model.addAttribute("username", currentUser.getUsername());
         model.addAttribute("name", currentUser.getName());
         model.addAttribute("surname", currentUser.getSurname());
+
+        fileService.setDefaultAvatar();
         model.addAttribute("avatar", currentUser.getAvatar());
+
+        fileService.setDefaultCover();
+        model.addAttribute("cover", currentUser.getCover());
+
         model.addAttribute("status", currentUser.getStatus());
         model.addAttribute("email", currentUser.getEmail());
         model.addAttribute("birthday", currentUser.getDateOfBirth());
@@ -73,11 +77,12 @@ public class MyPageController {
     @GetMapping("/upload_avatar_form")
     public String getUploadAvatarForm(Model model) {
         log.info("getUploadAvatarForm method called");
+        model.addAttribute("avatar", userService.getAnAuthorizedUser().getAvatar());
         return "upload_avatar_form";
     }
 
     @PostMapping("/upload_avatar_form")
-    public String submitUploadAvatarForm(@RequestParam MultipartFile avatar, Model model) {
+    public String submitUploadAvatarForm(@RequestParam MultipartFile avatar) {
         log.info("submitUploadAvatarForm method called");
 
         fileService.uploadImage(avatar, Paths.get(avatarFolder));
@@ -108,5 +113,22 @@ public class MyPageController {
     public String getUploadCoverForm(Model model) {
         log.info("getUploadCoverForm method called");
         return "upload_cover_form";
+    }
+
+    @PostMapping("/upload_cover_form")
+    public String submitUploadCoverForm(@RequestParam MultipartFile cover, Model model) {
+        log.info(userService.getAnAuthorizedUser().getUsername() + " confirmed background change");
+
+        fileService.uploadImage(cover, Paths.get(coverFolder));
+        userService.updateCoverOfCurrentUser(cover.getOriginalFilename());
+
+        return "redirect:/my_page";
+    }
+
+    @PostMapping("/delete_avatar")
+    public String deleteAvatar() {
+        log.info("User " + userService.getAnAuthorizedUser().getUsername() + " deleted avatar");
+        fileService.deleteAvatar();
+        return "redirect:/my_page";
     }
 }
