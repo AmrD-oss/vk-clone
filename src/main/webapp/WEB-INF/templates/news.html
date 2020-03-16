@@ -16,7 +16,7 @@
         <div class="news_wall">
             <div class="news" th:each="news : ${newsList}">
                 <h4 th:text="${news.title}"></h4>
-                <img th:src="${news.img}" alt="изображение">
+                <img class="image_news" th:src="${news.img}" alt="изображение">
                 <div class="date">
                     <img src="/images/news/clock.png" alt="время">
                     <span class="colon">:</span>
@@ -26,7 +26,6 @@
                     <span class="colon link-colon">:</span>
                     <a th:href="${news.link}" th:text="${news.link}"></a>
                 </div>
-
             </div>
         </div>
     </main>

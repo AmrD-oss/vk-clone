@@ -29,8 +29,7 @@ public class PossibleFriendsController {
         log.info("showPossibleFriends method called");
 
         List<UserEntity> possibleFriends = userService.getAllUsers();
-        for(UserEntity user : possibleFriends)
-            fileService.setDefaultAvatar();
+        possibleFriends.remove(userService.getAnAuthorizedUser());
 
         model.addAttribute("possibleFriends", possibleFriends);
         model.addAttribute("avatar", userService.getAnAuthorizedUser().getAvatar());

@@ -19,9 +19,10 @@ public class Note {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String description;
     private long likes;
-    private LocalDateTime date;
+    private String description;
+    private LocalDateTime date = LocalDateTime.now();
+    private String image;
 
     @ManyToOne
     @JoinColumn(name = "user_id")

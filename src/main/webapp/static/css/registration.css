@@ -24,11 +24,15 @@ a:hover {
     margin-left: 57px;
 }
 
+.block {
+    margin-bottom: 10px;
+}
+
 .redirect_login {
     width: 200px;
     position: relative;
-    left: 47px;
-    top: 280px;
+    left: 55px;
+    top: 290px;
 }
 
 .registration_block {
@@ -36,7 +40,7 @@ a:hover {
     height: 500px;
     position: relative;
     left: 500px;
-    top: 150px;
+    top: 50px;
 }
 
 .registration_block .registration_form {
@@ -44,36 +48,41 @@ a:hover {
     top: 50px;
 }
 
-.registration_block .registration_form .username {
-    margin-bottom: 10px;
-}
-
-.registration_block .registration_form .password {
-    margin-bottom: 10px;
-}
-
-.registration_block .registration_form .confirm-password {
-    margin-bottom: 10px;
-}
-
-.registration_block .registration_form .email {
-    margin-bottom : 10px;
-}
-
-.registration_block .registration_form .username .username_inp {
+.registration_block .registration_form .username input {
     margin-left: 5px;
 }
 
-.registration_block .registration_form .password .password_inp {
+.registration_block .registration_form .password input {
     margin-left: 7px;
 }
 
-.registration_block .registration_form .confirm-password .confirm-password_inp {
+.registration_block .registration_form .confirm-password input {
     margin-left: 19px;
 }
 
-.registration_block .registration_form .email .email_inp {
+.registration_block .registration_form .email input {
     margin-left: 32px;
+}
+
+.registration_block .registration_form .name input {
+    margin-left: 31px;
+}
+
+.registration_block .registration_form .surname input {
+    margin-left: 13px;
+}
+
+.registration_block .registration_form .name input {
+    margin-left: 31px;
+}
+
+.registration_block .registration_form .birthday input {
+    width: 161px;
+    margin-left: 16.5px;
+}
+
+.registration_block .registration_form .city input {
+    margin-left: 43.5px;
 }
 
 .registration_block .registration_form .submit {

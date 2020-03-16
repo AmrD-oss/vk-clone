@@ -44,8 +44,8 @@
             </div>
             <div class="change_cover">
                 <a th:href="@{/my_page/upload_cover_form}">
-                    <img src="/images/my_page/cover.png" alt="cover">
-                    <span class="block">Change cover</span>
+                    <img src="/images/my_page/photo.png" alt="cover">
+                    <span class="block" style="margin-right: 7px">Change cover</span>
                 </a>
             </div>
             <div class="delete_avatar">
@@ -68,7 +68,7 @@
                 <img src="/images/about/surname.png" alt="surname"><span class="about_text" th:text="${surname}"></span>
             </div>
             <div class="birthday">
-                <img src="/images/about/birthday.png" alt="birthday"><span class="about_text" th:text="${#temporals.format(birthday, 'd MMMM yyyy')}"></span>
+                <img src="/images/about/birthday.png" alt="birthday"><span class="about_text" th:text="${#temporals.format(birthday, 'd MMMM, yyyy')}"></span>
             </div>
             <div class="city">
                 <img src="/images/about/city.png" alt="city"><span class="about_text" th:text="${city}"></span>
@@ -77,22 +77,34 @@
                 <img src="/images/about/email.png" alt="email"><span class="about_text" th:text="${email}"></span>
             </div>
         </div>
-        <form class="whats_news">
-            <div class="top">
-                <img src="/images/my_page/whats_news.png" alt="Что нового?"><span>What's going on?</span>
-            </div>
-            <div class="text">
-                <textarea placeholder="Write something..."></textarea>
-            </div>
-            <div class="insert">
-                <input value="Post" type="submit">
-                <ul>
-                    <li><img src="/images/my_page/photo.png" alt="фото"></li>
-                    <li><img src="/images/my_page/film.png" alt="видео"></li>
-                    <li><img src="/images/my_page/audio.png" alt="аудио"></li>
-                </ul>
+        <form method="post" class="whats_news" th:action="@{/my_page/new_note}">
+            <div th:object="${note}">
+                <div class="top">
+                    <img src="/images/my_page/whats_news.png" alt="Что нового?"><span>What's going on?</span>
+                </div>
+                <div class="text">
+                    <textarea maxlength="255" th:field="${note.description}" placeholder="Write something..."></textarea>
+                </div>
+                <div class="insert">
+                    <input style="font-family: 'Georgia', sans-serif" value="Post" type="submit">
+                    <ul>
+                        <li>
+                            <img src="/images/my_page/photo.png" alt="фото">
+                        </li>
+                        <li><img src="/images/my_page/film.png" alt="видео"></li>
+                        <li><img src="/images/my_page/audio.png" alt="аудио"></li>
+                    </ul>
+                </div>
             </div>
         </form>
+        <div class="list_notes">
+            <div class="note" th:each="note : ${notes}">
+                <a th:href="@{/my_page}"><img th:src="@{'/images/avatars/' + ${avatar}}" alt="ава"></a>
+                <span class="post_username" th:text="${username}"></span>
+                <span class="post_date" th:text="${#temporals.format(note.date, 'dd MMMM HH:mm')}"></span>
+                <span class="description" th:text="${note.description}"></span>
+            </div>
+        </div>
         <!--<div style="width: 200px; height: 200px; background-color: darkseagreen; float: right; margin-right: 200px">-->
             <!--USD:<span th:text="${USD} + ' руб'"></span>-->
             <!--EUR:<span th:text="${EUR} + ' руб'"></span>-->

@@ -113,14 +113,12 @@ public class UserService implements UserDetailsService {
     }
 
     public void updateUser(String name, String surname,
-                           String email, String status,
-                           @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate birthday,
+                           String email, @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate birthday,
                            String city) {
         UserEntity currentUser = getAnAuthorizedUser();
         currentUser.setName(name);
         currentUser.setSurname(surname);
         currentUser.setEmail(email);
-        currentUser.setStatus(status);
         currentUser.setDateOfBirth(birthday);
         currentUser.setCity(city);
 

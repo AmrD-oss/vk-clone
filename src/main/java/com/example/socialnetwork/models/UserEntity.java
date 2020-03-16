@@ -51,7 +51,6 @@ public class UserEntity implements UserDetails {
     private String avatar;
     private String cover;
     private Boolean online = false;
-    private String status;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate dateOfBirth;

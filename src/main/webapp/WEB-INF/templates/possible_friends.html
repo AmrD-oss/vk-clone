@@ -15,6 +15,7 @@
         <div class="possible_friends" th:each="friend : ${possibleFriends}">
             <h4 th:text="${friend.username}"></h4>
             <img th:src="@{'/images/avatars/' + ${friend.avatar}}" alt="ава">
+
         </div>
     </main>
     <footer></footer>

@@ -22,6 +22,8 @@ public class LoginController {
     @GetMapping("/login")
     public String loginPage(Model model) {
         model.addAttribute("avatar", "default_avatar.png");
+        model.addAttribute("username", "Unknown");
+
         return "login";
     }
 

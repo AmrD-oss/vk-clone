@@ -29,6 +29,9 @@ public class RegistrationController {
     public String showRegistrationForm(Model model) {
         log.info("showRegistrationForm method called");
         model.addAttribute("newUser", new UserEntity());
+        model.addAttribute("avatar", "default_avatar.png");
+        model.addAttribute("username", "Unknown");
+
         return "registration";
     }
 

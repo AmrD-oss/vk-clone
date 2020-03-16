@@ -5,7 +5,7 @@
 
 body {
     background-color: gainsboro;
-    font-family: "Tahoma", sans-serif;
+    font-family: "Georgia", sans-serif;
 }
 
 a {
@@ -177,6 +177,13 @@ div {
     margin-top: 10px;
 }
 
+.edit_block .change_cover img {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 3px;
+}
+
 .edit_block .delete_avatar  {
     width: 195px;
     height: 30px;
@@ -192,6 +199,8 @@ div {
     border-radius: 3px;
     text-align: center;
     padding-right: 15px;
+    outline: none;
+    font-family: "Georgia", sans-serif;
 }
 
 .edit_block .delete_avatar form button img {
@@ -212,7 +221,7 @@ div {
     background-color: white;
     position: relative;
     border-radius: 3px;
-    box-shadow: 0 0 1px 0;
+    box-shadow: 0 0 2px 0;
 }
 
 .about_text {
@@ -290,8 +299,13 @@ div {
 .whats_news .text textarea {
     width: 499px;
     height: 59px;
-    padding: 10px;
     resize: none;
+    padding: 10px;
+    margin-left: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: "Georgia", sans-serif;
 }
 
 .whats_news .insert {
@@ -331,3 +345,54 @@ div {
     border: none;
 }
 
+.list_notes {
+    float: right;
+    margin-top: -85px;
+    margin-right: 156px;
+}
+
+.list_notes .note {
+    width: 521px;
+    height: 200px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 0.5px solid gray;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 0;
+    word-wrap: break-word;
+}
+
+.list_notes .note img {
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 2px;
+    border: 1px solid gray;
+}
+
+.list_notes .note .post_username {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.list_notes .note .description {
+    float: left;
+    text-align: justify;
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    margin-top: 70px;
+    margin-left: -145px;
+    font-size: 13px;
+}
+
+.list_notes .note .post_date {
+    float: left;
+    margin-top: 35px;
+    margin-left: -35px;
+    font-size: 13px;
+    color: dimgray;
+}
