@@ -92,6 +92,8 @@ public class MyPageController {
     public String getUploadAvatarForm(Model model) {
         log.info("getUploadAvatarForm method called");
         model.addAttribute("avatar", userService.getAnAuthorizedUser().getAvatar());
+        model.addAttribute("username", userService.getAnAuthorizedUser().getUsername());
+
         return "upload_avatar_form";
     }
 
