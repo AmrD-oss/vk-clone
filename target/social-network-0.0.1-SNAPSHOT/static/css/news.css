@@ -1,0 +1,124 @@
+body {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 14px;
+    background: #e8e8e8;
+}
+
+table {
+    border-spacing: 10px;
+}
+
+div {
+    font-size: 16px;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+.title {
+    width: 400px;
+    height: 60px;
+    text-align: center;
+    margin-left: 120px;
+    padding-top: 10px;
+}
+
+.title span {
+    margin: 40px 0 15px;
+    font-size: 36px;
+    font-family: "Arial Black", sans-serif;
+}
+
+.news_wall {
+    float: left;
+    margin-top: 20px;
+    margin-left: 155px;
+}
+
+.news_wall .news {
+    width: 700px;
+    height: 170px;
+    position: relative;
+    background-color: white;
+    border-radius: 1px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.news_wall .news h4 {
+    display: block;
+    width: 400px;
+    float: left;
+    padding: 20px;
+}
+
+.news_wall .news .image_news {
+    float: right;
+    width: 200px;
+    height: 125px;
+    margin-top: 23px;
+    margin-right: 15px;
+    border: 1px solid gray;
+}
+
+.news_wall .news .date {
+    position: absolute;
+    left: 20px;
+    top: 130px;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: "Montserrat", Arial,sans-serif;
+}
+
+.news_wall .news .date img {
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin-top: 3px;
+}
+
+.colon {
+    float: left;
+    display: block;
+    margin-left: 5px;
+}
+
+.link-colon {
+    margin-top: -1px;
+}
+
+.news_wall .news .date .time {
+    display: block;
+    float: right;
+    margin-top: 0.5px;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #ADADAD;
+}
+
+
+.news_wall .news .link {
+    float: left;
+    margin-left: 150px;
+    margin-top: 55px;
+    font-size: 13px;
+}
+
+.news_wall .news .link a {
+    display: block;
+    float: right;
+    margin-left: 5px;
+}
+
+.news_wall .news .link img {
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin-top: -0.5px;
+}

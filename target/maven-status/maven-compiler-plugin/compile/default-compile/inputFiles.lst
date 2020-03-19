@@ -3,12 +3,11 @@ C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\models\InputMessage.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\validators\password\ValidPassword.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\validators\email\EmailValidator.java
-C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\controllers\EditPageController.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\service\UserService.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\ServletInitializer.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\controllers\MainController.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\models\Role.java
-C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\repositories\NewsRepository.java
+C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\repositories\NoteRepository.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\models\Chat.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\validators\EmailExistsException.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\controllers\MyPageController.java
@@ -18,7 +17,9 @@ C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\service\FileService.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\models\Valute.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\controllers\NewsController.java
+C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\controllers\PossibleFriendsController.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\config\SecurityConfig.java
+C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\models\Note.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\models\OutputMessage.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\validators\email\ValidEmail.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\config\MvcConfig.java
@@ -28,7 +29,9 @@ C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\repositories\RoleRepository.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\SocialNetworkApplication.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\models\ExchangeRates.java
+C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\service\PossibleFriendsService.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\models\UserEntity.java
+C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\service\NoteService.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\controllers\RegistrationController.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\components\DateFormatter.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\controllers\LoginController.java

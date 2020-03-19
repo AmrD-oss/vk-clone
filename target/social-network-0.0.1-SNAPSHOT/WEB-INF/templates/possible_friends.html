@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <title>Possible friends</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/header.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/possible_friends.css}">
+</head>
+<body>
+    <header th:replace="fragments/header :: header"></header>
+    <main>
+        <div class="possible_friends" th:each="friend : ${possibleFriends}">
+            <h4 th:text="${friend.username}"></h4>
+            <img th:src="@{'/images/avatars/' + ${friend.avatar}}" alt="ава">
+
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

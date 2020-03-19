@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="053fac0b-ae29-4778-b419-5376f6286397" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/social_network_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/social_network_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/social-network.iml" beforeDir="false" afterPath="$PROJECT_DIR$/social-network.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/MyPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/MyPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/my_page.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/my_page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/controllers/MyPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/controllers/MyPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/social-network.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.socialnetwork.SocialNetworkApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.socialnetwork.SocialNetworkApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.socialnetwork.SocialNetworkApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.socialnetwork.SocialNetworkApplicationTests.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,11 +75,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -87,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/MyPageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="212">
+              <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,26 +113,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="39" column="60" lean-forward="true" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/header.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="85" column="14" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
+            <state relative-caret-position="226">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/my_page.css">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="10" selection-start-line="10" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="260">
+              <caret line="245" column="20" selection-start-line="245" selection-start-column="20" selection-end-line="245" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -186,13 +177,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/login.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/SocialNetworkApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/MvcConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/registration.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/RegistrationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/upload_avatar_form.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/edit_page.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/validators/EmailExistsException.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/js/change_background_img.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/UserEntity.java" />
@@ -203,11 +192,13 @@
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/news.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/service/NewsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/models/News.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/MyPageController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/my_page.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/header.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/my_page.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/header.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/MyPageController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -418,7 +409,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584567356296" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584579522815" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Practic" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -429,7 +420,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="RemoteServers" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -532,9 +523,9 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="749623000" />
+    <option name="totallyTimeSpent" value="754272000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -547,7 +538,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49850747" visible="true" weight="0.18623482" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49850747" visible="true" weight="0.18623482" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -555,22 +546,23 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" sideWeight="0.50149256" side_tool="true" weight="0.22024292" />
+      <window_info anchor="bottom" id="Application Servers" weight="0.3285968" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.3285968" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.5239787" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.4831261" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.41030195" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3285968" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3285968" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.40319717" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.49023092" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3232682" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3285968" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.3285968" />
       <window_info anchor="bottom" id="Duplicate detector" order="16" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -624,18 +616,33 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar!/java/util/Collections.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="755" column="30" selection-start-line="755" selection-start-column="30" selection-end-line="755" selection-end-column="30" />
-          <folding>
-            <element signature="e#23490#23491#0" expanded="true" />
-            <element signature="e#23548#23549#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/config/MvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -892,30 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/MyPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="39" column="60" lean-forward="true" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/my_page.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -938,7 +921,38 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/header.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="85" column="14" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
+          <caret line="85" column="17" lean-forward="true" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/fragments/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/MyPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="245" column="20" selection-start-line="245" selection-start-column="20" selection-end-line="245" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>

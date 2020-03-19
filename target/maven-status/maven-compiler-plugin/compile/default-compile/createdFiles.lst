@@ -1,12 +1,16 @@
 com\example\socialnetwork\controllers\NewsController.class
 com\example\socialnetwork\models\UserEntity.class
+com\example\socialnetwork\repositories\NoteRepository.class
 com\example\socialnetwork\validators\password\PasswordMatchesValidator.class
+com\example\socialnetwork\models\Note.class
 com\example\socialnetwork\models\OutputMessage.class
 com\example\socialnetwork\validators\EmailExistsException.class
 com\example\socialnetwork\components\DateFormatter.class
 com\example\socialnetwork\config\WebSocketConfiguration.class
 com\example\socialnetwork\validators\email\ValidEmail.class
 com\example\socialnetwork\service\SecurityService.class
+com\example\socialnetwork\controllers\PossibleFriendsController.class
+com\example\socialnetwork\service\PossibleFriendsService.class
 com\example\socialnetwork\SocialNetworkApplication.class
 com\example\socialnetwork\models\InputMessage.class
 com\example\socialnetwork\service\SecurityServiceImpl.class
@@ -14,7 +18,6 @@ com\example\socialnetwork\repositories\RoleRepository.class
 com\example\socialnetwork\validators\email\EmailValidator.class
 com\example\socialnetwork\controllers\MainController.class
 com\example\socialnetwork\validators\password\ValidPassword.class
-com\example\socialnetwork\repositories\NewsRepository.class
 com\example\socialnetwork\repositories\MessageRepository.class
 com\example\socialnetwork\models\Role.class
 com\example\socialnetwork\repositories\ChatRepository.class
@@ -22,6 +25,7 @@ com\example\socialnetwork\ServletInitializer.class
 com\example\socialnetwork\models\Chat.class
 com\example\socialnetwork\config\MvcConfig.class
 com\example\socialnetwork\service\NewsService.class
+com\example\socialnetwork\service\NoteService.class
 com\example\socialnetwork\config\SecurityConfig.class
 com\example\socialnetwork\service\UserService.class
 com\example\socialnetwork\config\WebAppInitializer.class
@@ -33,5 +37,4 @@ com\example\socialnetwork\service\FileService.class
 com\example\socialnetwork\controllers\ChatController.class
 com\example\socialnetwork\models\Valute.class
 com\example\socialnetwork\models\News.class
-com\example\socialnetwork\controllers\EditPageController.class
 com\example\socialnetwork\controllers\RegistrationController.class

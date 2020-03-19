@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/header.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/login.css}">
+</head>
+<body>
+
+    <div th:replace="fragments/header :: header"></div>
+
+    <div class="login_block">
+        <div class="heading">
+            <h1>Sign In</h1>
+        </div>
+        <div class="username_form">
+            <form method="post" action="/login-handler">
+                <div th:if="${param.error}" class="incorrect-data">
+                    <span class="text">Incorrect data entered</span>
+                </div>
+                <div class="username_input_block">
+                    <label for="username">Username:
+                        <input class="username_input" type="text" name="username" id="username" autofocus="autofocus">
+                    </label>
+                </div>
+                <div class="password_input_block">
+                    <label for="password">Password:
+                        <input class="password_input" type="password" name="password" id="password">
+                    </label>
+                </div>
+                <div>
+                    <input class="submit" name="submit" type="submit" value="Sign In">
+                </div>
+            </form>
+            <div class="redirect_registration">
+                <span>Not a member? <a th:href="@{/registration}">Sign Up</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
