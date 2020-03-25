@@ -1,9 +1,11 @@
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\service\SecurityService.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\validators\password\PasswordMatchesValidator.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\models\InputMessage.java
+C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\config\websocket\WebSocketAuthenticationConfig.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\validators\password\ValidPassword.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\validators\email\EmailValidator.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\service\UserService.java
+C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\config\websocket\HttpHandshakeInterceptor.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\ServletInitializer.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\controllers\MainController.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\models\Role.java
@@ -23,6 +25,7 @@ C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\models\OutputMessage.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\validators\email\ValidEmail.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\config\MvcConfig.java
+C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\config\websocket\WebSocketSecurityConfig.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\config\WebSocketConfiguration.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\repositories\MessageRepository.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\repositories\UserRepository.java
@@ -36,5 +39,6 @@ C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\components\DateFormatter.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\controllers\LoginController.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\config\WebAppInitializer.java
+C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\config\websocket\SubscribeEventListener.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\controllers\ChatController.java
 C:\Users\PC\IdeaProjects\social-network\src\main\java\com\example\socialnetwork\service\SecurityServiceImpl.java

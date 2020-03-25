@@ -12,7 +12,7 @@
     <groupId>com.example</groupId>
     <artifactId>social-network</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>social-network</name>
     <description>Demo project for Spring Boot</description>
 
@@ -63,20 +63,6 @@
                 <scope>test</scope>
             </dependency>
         <!--Spring Boot-->
-
-
-        <!--&lt;!&ndash;Websocket&ndash;&gt;-->
-            <!--<dependency>-->
-                <!--<groupId>org.springframework</groupId>-->
-                <!--<artifactId>spring-websocket</artifactId>-->
-                <!--<version>4.2.4.RELEASE</version>-->
-            <!--</dependency>-->
-            <!--<dependency>-->
-                <!--<groupId>org.springframework</groupId>-->
-                <!--<artifactId>spring-messaging</artifactId>-->
-                <!--<version>4.2.4.RELEASE</version>-->
-            <!--</dependency>-->
-        <!--&lt;!&ndash;Websocket&ndash;&gt;-->
 
         <!--SockJS-->
             <dependency>
@@ -155,6 +141,10 @@
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-taglibs</artifactId>
                 <version>5.2.1.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-messaging</artifactId>
             </dependency>
         <!--Security-->
 
