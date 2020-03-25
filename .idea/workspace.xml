@@ -2,254 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="053fac0b-ae29-4778-b419-5376f6286397" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/social-network.iml" beforeDir="false" afterPath="$PROJECT_DIR$/social-network.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/socialnetwork/config/websocket/WebSocketConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT.war.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/ServletInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/SocialNetworkApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/components/DateFormatter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/config/MvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/config/SecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/config/WebAppInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/config/WebSocketConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/config/websocket/HttpHandshakeInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/config/websocket/SubscribeEventListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/config/websocket/WebSocketAuthenticationConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/config/websocket/WebSocketConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/config/websocket/WebSocketSecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/controllers/ChatController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/controllers/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/controllers/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/controllers/MyPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/controllers/NewsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/controllers/PossibleFriendsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/controllers/RegistrationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/models/Chat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/models/ExchangeRates.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/models/InputMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/models/News.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/models/Note.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/models/OutputMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/models/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/models/UserEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/models/Valute.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/repositories/ChatRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/repositories/MessageRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/repositories/NoteRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/repositories/RoleRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/repositories/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/service/FileService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/service/NewsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/service/NoteService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/service/PossibleFriendsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/service/SecurityService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/service/SecurityServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/validators/EmailExistsException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/validators/email/EmailValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/validators/email/ValidEmail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/validators/password/PasswordMatchesValidator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/socialnetwork/validators/password/ValidPassword.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/HikariCP-3.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.9.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/attoparser-2.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/bcpkix-jdk15on-1.64.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/bcprov-jdk15on-1.64.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/bootstrap-3.3.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/byte-buddy-1.9.16.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/classmate-1.4.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/commons-codec-1.11.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/commons-compress-1.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/commons-io-2.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/commons-lang3-3.8.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/dom4j-2.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/evo-inflector-1.2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-core-5.4.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-entitymanager-5.4.10.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-validator-6.0.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-validator-annotation-processor-6.0.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-2.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-asl-1.9.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-databind-2.10.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jdk8-2.9.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jsr310-2.9.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-module-parameter-names-2.9.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jandex-2.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/javax.annotation-api-1.3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/javax.mail-1.6.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/javax.transaction-api-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/javax.xml.soap-api-1.4.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jaxws-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.3.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jquery-3.1.1-1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jsoup-1.12.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.28.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-api-2.11.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.11.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/mimepull-1.9.11.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/ognl-3.1.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/postgresql-42.2.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/saaj-impl-1.5.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.28.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/snakeyaml-1.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/sockjs-client-1.1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aop-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aspects-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-beans-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-2.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-aop-2.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-data-jpa-2.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-data-rest-2.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-jdbc-2.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-json-2.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-mail-2.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-2.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-services-2.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-websocket-2.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-support-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-core-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-commons-2.1.10.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-jpa-2.1.10.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-rest-core-3.1.10.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-data-rest-webmvc-3.1.10.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-expression-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-hateoas-0.25.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jcl-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-messaging-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-orm-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-oxm-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-plugin-core-1.2.0.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-acl-5.1.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-config-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-core-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-jwt-1.0.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-messaging-5.1.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-oauth2-2.3.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-oauth2-autoconfigure-2.2.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-taglibs-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-web-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-session-core-2.1.8.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-tx-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-websocket-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-ws-core-3.0.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/spring-xml-3.0.7.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/stomp-websocket-2.3.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/thymeleaf-3.0.10.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/thymeleaf-extras-java8time-3.0.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/thymeleaf-spring5-3.0.10.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/txw2-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/unbescape-1.1.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/validation-api-2.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/lib/webjars-locator-core-0.35.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/chat.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/create_news_form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/edit_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/fragments/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/fragments/header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/login-error.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/my_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/news.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/possible_friends.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/registration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/upload_avatar_form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/upload_cover_form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/WEB-INF/templates/welcome_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/about/birthday.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/about/city.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/about/email.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/about/name.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/about/surname.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/avatars/-EMtgReU__k.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/avatars/4Mj.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/avatars/5c64577c098e78452af2ef1a1848e1e8_w200.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/avatars/Anonymous_emblem.svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/avatars/M55xMeqP2DA.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/avatars/OAKpg28I7rU.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/avatars/ava.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/avatars/dancing_banana.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/avatars/default_avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/avatars/forest.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/avatars/img.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/avatars/vovan.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/avatars/xS58CdGyN0s.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/covers/5NKnfW9NtE4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/covers/5c64577c098e78452af2ef1a1848e1e8_w200.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/covers/BareEarlyCanadagoose-size_restricted.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/covers/KindDistortedIrrawaddydolphin-size_restricted.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/covers/cat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/covers/dancing_banana.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/covers/default_cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/covers/forest.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/covers/img.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/arrow-down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/audio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/ch_avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/cover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/delete_avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/edit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/film.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/friends.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/groups.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/home.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/messages.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/music.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/news.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/photo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/photos.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/settings_avatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/video.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/my_page/whats_news.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/news/clock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/images/news/link.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/css/chat.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/css/create_news_form.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/css/download_avatar_form.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/css/edit_page.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/css/header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/css/my_page.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/css/news.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/css/possible_friends.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/css/registration.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/js/change_background_img.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/social-network-0.0.1-SNAPSHOT/static/js/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.socialnetwork.SocialNetworkApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.socialnetwork.SocialNetworkApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.socialnetwork.SocialNetworkApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.socialnetwork.SocialNetworkApplicationTests.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -332,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="140" column="40" selection-start-line="140" selection-start-column="40" selection-end-line="140" selection-end-column="40" />
+            <state relative-caret-position="51">
+              <caret line="48" column="25" lean-forward="true" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -341,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            <state relative-caret-position="119">
+              <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -351,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="47" selection-start-column="47" selection-end-column="47" />
+              <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -730,7 +483,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585173222318" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585173695116" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Practic" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -844,7 +597,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="757925000" />
+    <option name="totallyTimeSpent" value="758562000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -859,7 +612,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49850747" visible="true" weight="0.22995952" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49850747" visible="true" weight="0.22995952" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -870,7 +623,7 @@
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.3285968" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.5346359" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.5346359" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.41030195" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1258,13 +1011,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="47" selection-start-column="47" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/socialnetwork/controllers/ChatController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1274,15 +1020,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="140" column="40" selection-start-line="140" selection-start-column="40" selection-end-line="140" selection-end-column="40" />
+        <state relative-caret-position="51">
+          <caret line="48" column="25" lean-forward="true" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="119">
+          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
         </state>
       </provider>
     </entry>
